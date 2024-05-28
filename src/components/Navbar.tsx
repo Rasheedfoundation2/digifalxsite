@@ -88,7 +88,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto  flex  w-full justify-between px-4 py-1 text-sm  bg-black boxShadow">
+    <div className="mx-auto  flex  w-full justify-between max-w-5xl px-4 py-1 text-sm  bg-black ">
       {/* left side */}
       <section >
         {/* logo */}
