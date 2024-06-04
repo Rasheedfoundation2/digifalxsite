@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logo from '@/assets/images/white.svg';
 import { MdLocationOn, MdOutlinePhone, MdHomeRepairService } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 import { SiTalenthouse } from "react-icons/si";
@@ -18,7 +17,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center sm:justify-items-start space-y-8 ">
           <div className="pt-8 space-y-2  flex-col justify-center items-center">
             <div className="flex justify-center items-center">
-             <Image src={logo} alt="logo" className="w-20 h-20 "/>
+             <Image src='/assets/images/white.svg' alt="logo" width={60} height={60}/>
              </div>
              <h2 className="text-2xl font-bold">Want to Start a Project?</h2>
                <Link href={"/contactus"}>
