@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'; // Import the Image component
-import { Spotlight } from "../../components/ui/Spotlight";
+import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/moving-border";
-import HeroImage from '@/assets/images/digital-marketing.svg'
 
 
 function HeroSection() {
@@ -37,10 +36,10 @@ function HeroSection() {
       </div>
       <div className='relative z-2 w-full md:w-1/2 flex justify-center items-center'>
         <Image 
-          src={HeroImage} // Path to the image in the public folder
+          src='assets/images/digital-marketing.svg' // Path to the image in the public folder
           alt="Web Design and Development"
-          // width={500} // Adjust the width and height as needed
-          // height={500}
+           width={500} // Adjust the width and height as needed
+           height={500}
           // className="w-full max-w-md md:max-w-full md:h-auto"
         />
       </div>
