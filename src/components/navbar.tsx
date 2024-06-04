@@ -3,7 +3,6 @@ import { Button } from "./ui/moving-border";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, } from "react";
-import logo from "@/assets/images/white.svg"
 import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
