@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
-  { name: 'Digital Marketing Services', link: '/Digitalmarketing' },
-  { name: 'Web Design & Development', link: '/web-development' },
-  { name: 'Search Engine Optimization', link: '/seo-icon' },
-  { name: 'Influencer Management', link: '/influencer' },
-  { name: 'Pay-per-click Advertising', link: 'Pay-per-click' },
+  { name: 'Digital Branding & Communication  Services', link: '/Digitalbranding' },
+  { name: 'UI / UX Services', link: '/ui_ux_services' },
+  { name: 'Web Development', link: '/web development' },
+  { name: 'E-Commerce', link: '/E-commerce' },
+  { name: 'Digital Marketing', link: 'Digital Marketing' },
 ];
 
 const ServiceItem = ({ service, onMouseEnter, onMouseLeave }) => (
@@ -28,11 +28,11 @@ const Services = () => {
 
   const handleMouseEnter = (serviceName) => {
     const backgroundImageMap = {
-      'Digital Marketing Services': '/assets/images/img1.jpg',
-      'Web Design & Development': '/assets/images/img2.jpg',
-      'Search Engine Optimization': '/assets/images/img3.jpg',
-      'Influencer Management': '/assets/images/img4.jpg',
-      'Pay-per-click Advertising': '/assets/images/img5.jpg',
+      'Digital Branding & Communication  Services': '/assets/images/img1.jpg',
+      'UI / UX Services': '/assets/images/img2.jpg',
+      'Web Development': '/assets/images/img3.jpg',
+      'E-Commerce': '/assets/images/img4.jpg',
+      'Digital Marketing': '/assets/images/img5.jpg',
     };
 
     const newBackground = backgroundImageMap[serviceName] || '/assets/images/image.png';
@@ -56,10 +56,13 @@ const Services = () => {
           className="transition-opacity duration-500 ease-in-out"
         />
       </div>
-      <div className="relative z-10 flex flex-col justify-center h-full p-10 bg-black bg-opacity-50 text-white whitespace-wrap">
-        <h1 className="hollow-text mb-10 text-8xl font-semibold text-lime-400">
-          Our Services
-        </h1>
+      <div className="relative z-10 lg:flex lg:justify-left h-full bg-black bg-opacity-50 text-white whitespace-wrap">
+      <div className="flex items-center justify-center lg:w-44 lg:flex-shrink-0">
+        <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
+              Our Services
+        </h2>
+      </div>
+      <div className='mt-[10%] space-y-10'>
         {services.map((service) => (
           <ServiceItem
             key={service.name}
@@ -68,6 +71,7 @@ const Services = () => {
             onMouseLeave={handleMouseLeave}
           />
         ))}
+       </div>  
       </div>
     </div>
   );

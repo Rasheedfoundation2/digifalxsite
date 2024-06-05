@@ -6,8 +6,8 @@ export interface Benefit {
 }
 
 export const benefits: Benefit[] = [
-  { name: 'Web Development', image:'/initial_card_image.png' },
-  { name: 'Mobile Application', image: '/initial_card_image.png' }, // Replace with actual images if available
-  { name: 'Digital Marketing', image: '/initial_card_image.png' },
-  { name: 'Bussiness Development', image: '/initial_card_image.png' }, // Replace with actual images if available
+  { name: 'Web Development', image:'/assets/images/img1.jpg' },
+  { name: 'Mobile Application', image: '/assets/images/img2.jpg' }, // Replace with actual images if available
+  { name: 'Digital Marketing', image: '/assets/images/img3.jpg' },
+  { name: 'Bussiness Development', image: '/assets/images/img4.jpg' }, // Replace with actual images if available
 ];

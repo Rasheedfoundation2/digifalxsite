@@ -5,6 +5,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/moving-border";
 
 
+
 function HeroSection() {
   return (
     <div className='h-auto md:h-[50rem] text-white w-full rounded-md flex 
@@ -27,8 +28,8 @@ function HeroSection() {
         <div className='mt-4'>
           <Link href={"/aboutus"}>
           <Button
-        borderRadius="2.75rem"
-        className="font-semibold bg-black dark:bg-slate-900 text-white  dark:text-white border-lime-200 dark:border-slate-800">
+        borderRadius="2.5rem"
+        className="font-semibold bg-black dark:bg-neutral-900 text-white  dark:text-white border-black border-4 dark:border-neutral-900">
         Lets Connect
       </Button>
           </Link>
@@ -36,10 +37,10 @@ function HeroSection() {
       </div>
       <div className='relative z-2 w-full md:w-1/2 flex justify-center items-center'>
         <Image 
-          src='assets/images/digital-marketing.svg' // Path to the image in the public folder
+          src='/assets/images/digital-marketing.svg'// Path to the image in the public folder
           alt="Web Design and Development"
-           width={500} // Adjust the width and height as needed
-           height={500}
+          width={500} // Adjust the width and height as needed
+          height={500}
           // className="w-full max-w-md md:max-w-full md:h-auto"
         />
       </div>

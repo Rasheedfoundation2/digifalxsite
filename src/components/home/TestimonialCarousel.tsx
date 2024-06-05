@@ -45,7 +45,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
     <div className="relative max-w-4xl mx-auto">
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-emerald-400 p-2 rounded-full"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-BlueNew-100 p-3 rounded-full"
       >
         &lt;
       </button>
@@ -78,7 +78,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
       </div>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-emerald-400 p-2 rounded-full"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-BlueNew-100 p-3 rounded-full"
       >
         &gt;
       </button>

@@ -17,7 +17,7 @@ const Form: React.FC = () => {
         <label className="block text-sm font-bold mb-2">Message</label>
         <textarea className="w-full p-2 rounded bg-gray-800 text-white"></textarea>
       </div>
-      <button type="submit" className="bg-purple-600 p-2 rounded">Submit</button>
+      <button type="submit" className="bg-BlueNew-100 p-2 rounded">Submit</button>
     </form>
   );
 };

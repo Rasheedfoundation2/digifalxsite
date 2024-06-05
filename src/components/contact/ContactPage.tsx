@@ -30,14 +30,16 @@ const ContactPage = () => {
     }
   };
 
-
+  
   return (
-   
-  <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_2fr] sm:justify-items-start  space-y-2 p-5 ">
-    <div className="hollow-text relative top-[35%] transform -translate-y-1/2 lg:-rotate-90  lg:left-36 lg:origin-center text-7xl sm:text-7xl md:text-7xl font-bold tracking-wide whitespace-wrap">
-        Contact Us
+    <div className="lg:flex justify-between">
+       <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
+          <h2 className="hollow-text text-7xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
+            Contact US
+          </h2>
       </div>
-    <div className='grid lg:grid-cols-[1fr_3fr] sm:grid-cols-1 w-full  gap-5'>
+    <div className="relative flex justify-center mt-10 mb-10 flex-auto">
+    <div className='grid lg:grid-cols-[1fr_3fr] sm:grid-cols-1 max-w-7xl  gap-5'>
       <div className="space-y-4 justify-center">
         <div>
           <iframe
@@ -61,13 +63,13 @@ const ContactPage = () => {
         </div>
       </div>
     
-    <div className="w-full bg-black p-8 rounded-lg border-white border-2">
+    <div className="w-full bg-neutral-100 p-8 rounded-lg border-neutral-300 border-2">
       <form onSubmit={handleSubmit}>
-      <div className="text-4xl text-lime-400 font-bold mb-2">Message with me</div>
+      <div className="text-4xl text-black font-bold mb-2 text-center">Message Us</div>
         <div className="mb-4">
-          <label className="block text-white mb-1" htmlFor="fullName">Full Name</label>
+          <label className="block text-black mb-1" htmlFor="fullName">Full Name</label>
           <input
-            className="w-full px-3 py-2 mt-1 bg-black text-white rounded border-white border-2"
+            className="w-full px-3 py-2 mt-1 bg-neutral-200 text-black rounded border-neutral-300 border-2"
             type="text"
             name="fullName"
             id="fullName"
@@ -77,9 +79,9 @@ const ContactPage = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white mb-1" htmlFor="email">Email Address</label>
+          <label className="block text-black mb-1" htmlFor="email">Email Address</label>
           <input
-            className="w-full px-3 py-2 mt-1 bg-black text-white rounded border-white border-2"
+            className="w-full px-3 py-2 mt-1 bg-neutral-200 text-black rounded border-neutral-300 border-2"
             type="email"
             name="email"
             id="email"
@@ -89,9 +91,9 @@ const ContactPage = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white mb-1" htmlFor="subject">Subject</label>
+          <label className="block text-black mb-1" htmlFor="subject">Subject</label>
           <input
-            className="w-full px-3 py-2 mt-1  bg-black text-white rounded border-white border-2"
+            className="w-full px-3 py-2 mt-1  bg-neutral-200 text-black rounded border-neutral-300 border-2"
             type="text"
             name="subject"
             id="subject"
@@ -101,9 +103,9 @@ const ContactPage = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block text-white mb-1" htmlFor="message">Message</label>
+          <label className="block text-black mb-1" htmlFor="message">Message</label>
           <textarea
-            className="w-full px-3 py-2 mt-1  bg-black text-white rounded border-white border-2"
+            className="w-full px-3 py-2 mt-1  bg-neutral-200 text-black rounded border-neutral-300 border-2"
             name="message"
             id="message"
             rows={4}
@@ -114,13 +116,17 @@ const ContactPage = () => {
         </div>
         <button
           type="submit"
-          className="w-full py-2 text-center text-black bg-lime-500 rounded hover:bg-white">
+          className="w-full py-2 text-center text-White bg-BlueNew-100 rounded hover:bg-black">
           Send Massage
         </button>
       </form>
     </div>
    </div>
+   </div>
   </div>
+  
+
+    
   
 );
 };

@@ -23,13 +23,13 @@ const CounterCircle: React.FC<CounterCircleProps> = ({ endCount, text, duration,
           return endCount;
         }
       });
-    }, 100); // Adjust speed of counting here
+    }, 200); // Adjust speed of counting here
 
     return () => clearInterval(interval);
   }, [endCount, duration]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-52 h-52 border-white rounded-full shadow-lg mb-6 mt-8 m-1">
+    <div className="flex flex-col items-center justify-center w-52 h-52 border-white border-2 rounded-full shadow-lg mb-6 mt-8 m-1">
       <div className="text-6xl font-bold text-white outline-4 text-shadow-lg animate-grow">
         {Math.min(Math.floor(count), endCount)}{character}
       </div>

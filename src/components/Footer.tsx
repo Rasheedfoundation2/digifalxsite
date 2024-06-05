@@ -6,22 +6,21 @@ import { IoMail } from "react-icons/io5";
 import { SiTalenthouse } from "react-icons/si";
 import { FcAbout } from "react-icons/fc";
 import { GrProjects } from "react-icons/gr";
-
 import { FaHome ,FaInstagram ,FaLinkedin,FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-black text-white py-12 rounded-t-3xl">
+    <footer className=" bg-black text-white py-12 rounded-t-3xl border-t-2 border-neutral-600">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center sm:justify-items-start space-y-8 ">
           <div className="pt-8 space-y-2  flex-col justify-center items-center">
             <div className="flex justify-center items-center">
-             <Image src='/assets/images/white.svg' alt="logo" width={60} height={60}/>
+             <Image src="/assets/images/white.svg" alt="logo" width={60} height={60}/>
              </div>
              <h2 className="text-2xl font-bold">Want to Start a Project?</h2>
                <Link href={"/contactus"}>
-                <button className="mt-2 bg-lime-600 px-4 py-2 rounded">
+                <button className="relative align-middle mt-2 bg-lime-600 px-4 py-2 rounded">
                   Lets Talks
                 </button>
                 </Link> 

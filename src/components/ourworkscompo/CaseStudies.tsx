@@ -1,5 +1,5 @@
+"use client"
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { FaArrowAltCircleLeft ,  FaArrowAltCircleRight } from "react-icons/fa";
 
 const caseStudies = [
@@ -10,10 +10,10 @@ const caseStudies = [
 ];
 
 const backgroundColors = [
-  "#6A0DAD", // Hex color for bg-purple-800
-  "#7B68EE", // Hex color for bg-purple-600
-  "#8A2BE2", // Hex color for bg-purple-700
-  "#9370DB", // Hex color for bg-purple-500
+  "#27BC9E", // Hex color for bg-purple-800
+  "#27BC9E", // Hex color for bg-purple-600
+  "#27BC9E", // Hex color for bg-purple-700
+  "#27BC9E", // Hex color for bg-purple-500
 ];
 
 const CaseStudies = () => {
@@ -41,20 +41,20 @@ const CaseStudies = () => {
         style={{ backgroundColor: backgroundColors[currentIndex] }}
         className="py-12 relative transition-colors duration-1000"
       >
-        <div className="mt-16 text-3xl font-extrabold text-white">
+        <div className="text-3xl mt-10 font-extrabold text-white">
           {caseStudies[currentIndex]}
         </div>
         <button
-          className="case-studies-btn left-0 top-1/2 transform -translate-y-1/2 ml-16"
+          className="case-studies-btn left-0 top-1/2 lg:transform lg:-translate-y-1/2 lg:ml-16"
           onClick={prevCaseStudy}
         >
-          <FaArrowAltCircleLeft  className="w-24 h-24"/>
+          <FaArrowAltCircleLeft  className="lg:h-24 lg:w-24 sm:w-10 sm:h-10"/>
         </button>
         <button
-          className="case-studies-btn right-0 top-1/2 transform -translate-y-1/2 mr-4"
+          className="case-studies-btn right-0 top-1/2 lg:transform lg:-translate-y-1/2 lg:mr-16"
           onClick={nextCaseStudy}
         >
-          <FaArrowAltCircleRight className="h-24 w-24"/>
+          <FaArrowAltCircleRight className="lg:h-24 lg:w-24 sm:w-10 sm:h-10"/>
         </button>
         <style jsx>{`
           .case-studies-btn {

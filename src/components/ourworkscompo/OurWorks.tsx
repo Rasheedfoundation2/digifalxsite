@@ -2,11 +2,10 @@
 
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/utils/cn"; // Ensure this is defined correctly
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover"; // Ensure this is defined correctly
-import LogoSection from "@/components/home/companyLogo";
-import CaseStudies from "@/components/ourworkscompo/CaseStudies";
+
+
 
 const projects = [
   {
@@ -89,23 +88,18 @@ export function OurWorks() {
   }, []);
 
   return (
-    <div className="bg-black text-white relative min-h-screen overflow-x-hidden">
-      {/* Vertical Text Section */}
-      <div className="sm:absolute sm:top-1/2 sm:left-0 transform sm:-rotate-90 sm:origin-top-left sm:-translate-y-1/2 w-full text-center sm:text-left sm:w-auto">
-        <h1 className="hollow-text text-6xl sm:text-8xl">Our Works</h1>
-      </div>
-
+    <div className="bg-black text-white">
       {/* Projects Grid */}
-      <div className="container mx-auto py-8 px-4 sm:ml-20">
-        <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center sm:items-stretch">
+      <div className="max-w-7xl mx-auto py-8 px-12">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 sm:justify-items-streatch">
           {projects.map((project) => (
             <DirectionAwareHover key={project.id} imageUrl={project.image}>
               <div className="bg-white text-black rounded-lg overflow-hidden w-full max-w-xs">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  height={400}
-                  width={400}
+                  height={300}
+                  width={300}
                   className="object-cover w-full h-64"
                 />
                 <div className="p-4">
@@ -116,17 +110,7 @@ export function OurWorks() {
             </DirectionAwareHover>
           ))}
         </div>
-      </div>
-
-      {/* Logos Section */}
-     <div>
-      <LogoSection/>
-     </div>
-
-      {/* Case Studies Section */}
-      <div>
-        <CaseStudies/>
-      </div>
+      </div>   
     </div>
   );
 }
