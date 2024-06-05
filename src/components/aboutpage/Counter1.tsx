@@ -3,18 +3,18 @@ import CounterCircle from "@/components/aboutpage/CounterCircle";
 const Counter1 = () => {
     return (
       
-        <div className="flex justify-center bg-black gap-10 items-center flex-wrap	">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-center mx-16 bg-black">
           <div >
-            <CounterCircle endCount={10} text="Years Experience" duration={3000} character="+" />
+            <CounterCircle endCount={5} text="Years Experience" duration={3000} character="+" />
           </div>
           <div>
-            <CounterCircle endCount={22} text="Projects Completed" duration={3000} character="k" />
+            <CounterCircle endCount={24} text="Projects Completed" duration={3000} character="+" />
           </div>
           <div >
-            <CounterCircle endCount={18} text="Customer Happy" duration={3000} character="k"/>
+            <CounterCircle endCount={11} text="Happy Customer" duration={3000} character="+"/>
           </div>
           <div >
-            <CounterCircle endCount={180} text="Winning Awards" duration={3000} character="+"/>
+            <CounterCircle endCount={2} text="Networks" duration={3000} character="+"/>
           </div>
         </div>
      

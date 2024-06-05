@@ -3,7 +3,6 @@ import { Button } from "./ui/moving-border";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, } from "react";
-import logo from "@/assets/images/white.svg"
 import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -22,16 +21,45 @@ const navItems: NavItem[] = [
     link: "/"
   },
   {
-    label: "SERVICES",
-    link: "/servicespage"
-  },
-  {
     label: "ABOUT US",
     link: "/aboutus"
   },
   {
+    label: "SERVICES",
+    link: "/servicespage",
+    children: [
+      {
+        label:"Digital Branding & Communication",
+        link:"/"
+      },
+      {
+        label:"UI/UX Services",
+        link:"/"
+      },
+      {
+        label:"Web Development",
+        link:"/"
+      },
+      {
+        label:"E-commerce",
+        link:"/"
+      },
+      {
+        label:"Digital Marketing",
+        link:"/"
+      },
+    ]
+  },
+  
+  {
     label: "OUR WORK",
-    link: "/ourworks"
+    link: "/ourworks",
+    children: [
+      {
+        label: "CASE STUDY",
+        link: "/casestudy",
+      },
+    ]
   },
   {
     label: "TALENT",
@@ -56,6 +84,10 @@ const navItems: NavItem[] = [
         link: "/digichamps"
       }
     ]
+  },
+  {
+    label: "BLOGS",
+    link: "/aboutus"
   }
 ];
 
@@ -76,11 +108,11 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto  flex  w-full justify-between px-4 py-1 text-sm  bg-#0A0A0A boxShadow">
+    <div className="mx-auto  flex  w-full justify-between px-4 py-1 text-sm  bg-black boxShadow border-b-2 border-neutral-600">
       {/* left side */}
       <section className="ml-10">
         {/* logo */}
-        <Image src='assets/images/white.svg' alt="logo" width={'60'} height={'60'}/>
+        <Image src='assets/images/white.svg' alt="logo" width={60} height={60}/>
         </section>
       <section ref={animationParent} className="flex items-center gap-10 font-semibold">
      
@@ -91,7 +123,7 @@ export default function Navbar() {
               key={i}
               href={d.link ?? "#"}
               className="relative group px-2 py-3 transition-all " >
-              <p className="flex cursor-pointer items-center gap-2 text-white group-hover:text-lime-400">
+              <p className="flex cursor-pointer items-center gap-2 text-white group-hover:text-BlueNew-100">
                 <span>{d.label}</span>
                 {d.children && (
                   <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
@@ -104,7 +136,7 @@ export default function Navbar() {
                     <Link
                       key={i}
                       href={ch.link ?? "#"}
-                      className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-lime-400"
+                      className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-BlueNew-100"
                     >
                       {/* image */}
                       {ch.iconImage && (
@@ -127,7 +159,7 @@ export default function Navbar() {
       {/* right side data */}
       <section className="hidden md:flex items-center gap-8 pr-10">
       <Link href={"/contactus"}>
-      <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 text-lime-400 transition-all hover:border-lime-400 hover:text-white">
+      <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 text-BlueNew-100 transition-all hover:border-lime-400 hover:text-white">
             Lets Talk
           </button>
           </Link> 

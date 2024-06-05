@@ -13,8 +13,8 @@ const logos = [
 
 function LogoSection() {
   return (
-    <div className="mt-12 text-white text-center">
-      <p className="mb-4 text-4xl text-lime-400">DIGIFALX HELPS MORE COMPANIES GROW FASTER</p>
+    <div className="mt-10 text-white text-center">
+      <p className="mb-4 text-white text-5xl">DIGIFALX HELPS MORE COMPANIES GROW FASTER</p>
       <div className="overflow-hidden">
         <div className="flex animate-scroll space-x-8">
           {logos.map((logo, index) => (
@@ -24,7 +24,7 @@ function LogoSection() {
           ))}
           {logos.map((logo, index) => (
             <div key={index + logos.length} className="flex-none w-48 h-48 flex justify-center items-center">
-              <Image src={logo.src} alt={`Logo ${index + logos.length}`} width={100} height={100} />
+              <Image src={logo.src} alt={`Logo ${index + logos.length}`} width={200} height={200} />
             </div>
           ))}
         </div>

@@ -26,7 +26,37 @@ export const careerData = [
     },
     {
       image: '/assets/images/DigitalMarketing.png',
-      title: 'Marketing',
+      title: 'Business Analyst',
+      description: 'Join our team and unleash your creativity as we revolutionize the market together.'
+    },
+    {
+      image: '/assets/images/DigitalMarketing.png',
+      title: 'Data Analyst',
+      description: 'Join our team and unleash your creativity as we revolutionize the market together.'
+    },
+    {
+      image: '/assets/images/DigitalMarketing.png',
+      title: 'Videographer',
+      description: 'Join our team and unleash your creativity as we revolutionize the market together.'
+    },
+    {
+      image: '/assets/images/DigitalMarketing.png',
+      title: 'Graphic Designer',
+      description: 'Join our team and unleash your creativity as we revolutionize the market together.'
+    },
+    {
+      image: '/assets/images/DigitalMarketing.png',
+      title: 'Content Writer',
+      description: 'Join our team and unleash your creativity as we revolutionize the market together.'
+    },
+    {
+      image: '/assets/images/DigitalMarketing.png',
+      title: 'Social Media Manager',
+      description: 'Join our team and unleash your creativity as we revolutionize the market together.'
+    },
+    {
+      image: '/assets/images/DigitalMarketing.png',
+      title: 'Tester',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.'
     }
   ];

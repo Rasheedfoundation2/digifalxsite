@@ -17,6 +17,16 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: { 
+      colors:{
+        BlueNew:{
+            DEFAULT: '#000',
+            100:'#28A6BC'
+        },
+        GreenNew:{
+          DEFAULT:'#000',
+          100:'#27BC9E'
+      },
+      },
       textColor: {
         'transparent': 'transparent',
       },

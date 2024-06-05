@@ -36,7 +36,7 @@ const TeamCarousel: React.FC = () => {
     <Carousel responsive={responsive}>
       {teamMembers.map((member) => (
         <div key={member.id} className="p-6 ">
-          <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden p-6 transform hover:scale-105 hover:shadow-xl duration-300  ">
+          <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden m-12 transform hover:scale-105 hover:shadow-xl duration-300  ">
             <img src={member.image} alt={member.name} className="w-full h-80  object-fit rounded-lg mb-4 justify-center" />
             <div className="p-4">
               <h3 className="text-xl text-center text-gray-600 font-bold mb-1">{member.name}</h3>
