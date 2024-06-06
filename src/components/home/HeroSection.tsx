@@ -10,7 +10,7 @@ function HeroSection() {
   return (
     <div className='h-auto md:h-[50rem] text-white w-full rounded-md flex 
     flex-col md:flex-row items-center justify-between relative overflow-hidden 
-    mx-auto py-10 md:py-0'>
+    mx-auto py-10 md:py-0 bg-black'>
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="grey"

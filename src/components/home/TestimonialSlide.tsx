@@ -38,7 +38,7 @@ const TestimonialSlide = () => {
         </div>
         
         {/* Right Column with Text and Button */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center text-white">
             <TestimonialCarousel slides={slides} />
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import CareerCard from './CareerCard';
+import CareerCard from './CareerCard1';
 import { careerData } from '@/components/careers/CareerData';
 import Banner from '../ourworkscompo/Banner';
 
@@ -22,11 +22,12 @@ const CareerSection: React.FC = () => {
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-9">
         {careerData.map((career, index) => (
-          <CareerCard 
+          <CareerCard
             key={index}
             image={career.image}
             title={career.title}
             description={career.description}
+            responsibilities={career.responsibilities}
           />
         ))}
       </div>

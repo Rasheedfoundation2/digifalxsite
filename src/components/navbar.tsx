@@ -30,23 +30,23 @@ const navItems: NavItem[] = [
     children: [
       {
         label:"Digital Branding & Communication",
-        link:"/"
+        link:"/servicespage/digitalbranding"
       },
       {
         label:"UI/UX Services",
-        link:"/"
+        link:"/servicespage/ui-ux"
       },
       {
         label:"Web Development",
-        link:"/"
+        link:"/servicespage/web-development"
       },
       {
         label:"E-commerce",
-        link:"/"
+        link:"/servicespage/e-commerce"
       },
       {
         label:"Digital Marketing",
-        link:"/"
+        link:"/servicespage/digital-marketing"
       },
     ]
   },
@@ -112,7 +112,7 @@ export default function Navbar() {
       {/* left side */}
       <section className="ml-10">
         {/* logo */}
-        <Image src='assets/images/white.svg' alt="logo" width={60} height={60}/>
+        <Image src='assets/images/white.svg' alt="logo" width={60} height={74}/>
         </section>
       <section ref={animationParent} className="flex items-center gap-10 font-semibold">
      
@@ -123,7 +123,7 @@ export default function Navbar() {
               key={i}
               href={d.link ?? "#"}
               className="relative group px-2 py-3 transition-all " >
-              <p className="flex cursor-pointer items-center gap-2 text-white group-hover:text-BlueNew-100">
+              <p className="flex cursor-pointer items-center gap-2 text-base text-white group-hover:text-GreenNew-100">
                 <span>{d.label}</span>
                 {d.children && (
                   <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
@@ -159,7 +159,7 @@ export default function Navbar() {
       {/* right side data */}
       <section className="hidden md:flex items-center gap-8 pr-10">
       <Link href={"/contactus"}>
-      <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 text-BlueNew-100 transition-all hover:border-lime-400 hover:text-white">
+      <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
             Lets Talk
           </button>
           </Link> 
@@ -177,7 +177,7 @@ export default function Navbar() {
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
     <div className="fixed left-0 top-1 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden z-30">
-      <div className="h-full w-[100%] bg-black px-4 py-4 border border-slate-600">
+      <div className="h-full w-[80%] bg-black px-4 py-4 border border-slate-600">
         <section className="flex  justify-end">
           <AiOutlineClose
             onClick={closeSideMenu}
@@ -199,8 +199,8 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
 
         <section className="flex flex-col gap-8 mt-4 items-center">
         <Link href={"/contactus"}>
-        <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 text-lime-400 transition-all hover:border-lime-400 hover:text-text-400">
-            Lets Talk
+        <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
+             Lets Talks
           </button>
           </Link>
         </section>
@@ -246,7 +246,7 @@ function SingleNavItem(d: NavItem) {
             <Link
               key={i}
               href={ch.link ?? "#"}
-              className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-lime-400"
+              className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-GreenNew-100"
             >
               {/* image */}
               {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}

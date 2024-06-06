@@ -21,7 +21,7 @@ const Form: React.FC = () => {
               type="text"
               id="college"
               name="college"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+              className="shadow appearance-none border rounded w-full py-2 px-3  bg-neutral-200 text-neutral-800 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
               placeholder="Enter your college name"
             />
           </div>
@@ -37,7 +37,7 @@ const Form: React.FC = () => {
               type="text"
               id="experience"
               name="experience"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-neutral-800 text-lg leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+              className="shadow appearance-none border rounded w-full py-2 px-3  bg-neutral-200 text-neutral-800 text-lg leading-tight focus:outline-none focus:ring-2 focus:ring-black"
               placeholder="Enter years of experience"
             />
             {/* Add more inputs for employee */}
@@ -54,7 +54,7 @@ const Form: React.FC = () => {
               type="text"
               id="projects"
               name="projects"
-              className="shadow appearance-none border rounded w-full py-2 px-3  text-neutral-800 text-lg leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+              className="shadow appearance-none border rounded w-full py-2 px-3  bg-neutral-200 text-neutral-800 text-lg leading-tight focus:outline-none focus:ring-2 focus:ring-black"
               placeholder="Enter number of projects completed"
             />
             {/* Add more inputs for freelancer */}
@@ -71,7 +71,7 @@ const Form: React.FC = () => {
               type="text"
               id="followers"
               name="followers"
-              className="shadow appearance-none border rounded w-full py-2 px-3  text-neutral-800 text-lg leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+              className="shadow appearance-none border rounded w-full py-2 px-3  bg-neutral-200 text-neutral-800 text-lg leading-tight focus:outline-none focus:ring-2 focus:ring-black"
               placeholder="Enter number of followers"
             />
             {/* Add more inputs for influencer */}
@@ -117,9 +117,9 @@ const Form: React.FC = () => {
                   Contact
                 </label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="contact"
+                  name="contact"
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-black bg-neutral-200 border-neutral-300 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
                   placeholder="Enter your Contact"
                 />

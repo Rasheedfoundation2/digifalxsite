@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
-  { name: 'Digital Branding & Communication  Services', link: '/Digitalbranding' },
-  { name: 'UI / UX Services', link: '/ui_ux_services' },
-  { name: 'Web Development', link: '/web development' },
-  { name: 'E-Commerce', link: '/E-commerce' },
-  { name: 'Digital Marketing', link: 'Digital Marketing' },
+  { name: 'Digital Branding & Communication  Services', link: '/servicespage/digitalbranding' },
+  { name: 'UI / UX Services', link: '/servicespage/ui-ux' },
+  { name: 'Web Development', link: '/servicespage/web-development' },
+  { name: 'E-Commerce', link: '/servicespage/e-commerce' },
+  { name: 'Digital Marketing', link: '/servicespage/digital-marketing' },
 ];
 
 const ServiceItem = ({ service, onMouseEnter, onMouseLeave }) => (

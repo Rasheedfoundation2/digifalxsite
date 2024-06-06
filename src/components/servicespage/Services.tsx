@@ -11,26 +11,31 @@ function OurServices() {
       title: "Digital Branding and Communication",
       description: "Comprehensive consultancy services covering digital strategy, market analysis, and campaign optimization, ensuring alignment with business objectives and maximizing ROI.",
       image: "/jordans.webp",
+      link: "/servicespage/digitalbranding",
     },
     {
-      title: "UI /UX Services",
+      title: "UI/UX",
       description: "Creating a face for the brand with seamless integration ultimately helps build a strong connection with your audience. Moreover, it enhances brand recognition and fosters loyalty.",
       image: "/jordans.webp",
+      link: "/servicespage/ui-ux",
     },
     {
       title: "Web Development",
       description: "Tailored strategies enhance the online visibility of the website, driving organic traffic and improving search rankings through on-page optimization, content creation, and analytics.",
       image: "/jordans.webp",
+      link: "/servicespage/web-development",
     },
     {
       title: "E-Commerce",
       description: "Harness the power of influencers to amplify your brand’s message. We identify, engage, and manage influencer partnerships for maximum impact and brand alignment.",
       image: "/jordans.webp",
+      link: "/servicespage/e-commerce",
     },
     {
       title: "Digital Marketing",
       description: "Synonymous with affiliate marketing, PPC is renowned for delivering highly instantaneous results. Hence, it’s hailed as the epitome.",
       image: "/jordans.webp",
+      link: "/servicespage/digital-marketing",
     },
   ];
 
@@ -57,16 +62,18 @@ function OurServices() {
                       {service.description}
                     </p>
                   </div>
-                  <button className="self-start rounded-full pl-4 pr-4 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+                  <Link href={service.link}>
+                  <button className="px-6 py-2 mt-4 bg-black text-white rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-black transition-colors">
                     <span>Click here</span>
                   </button>
+                  </Link>
                 </BackgroundGradient>
               ))}
             </div>
         </div>
 
         <div className="mt-20 text-center">
-          <Link href="/Servicespage" className="inline-block px-4 py-2 rounded-md border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200">
+          <Link href="/Servicespage" className="inline-block px-4 py-2 rounded-full border-2 border-neutral-600 text-white bg-black hover:bg-BlueNew-100 transition duration-200">
             View All Services
           </Link>
         </div>

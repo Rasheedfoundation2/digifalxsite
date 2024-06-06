@@ -32,7 +32,7 @@ const ContactPage = () => {
 
   
   return (
-    <div className="lg:flex justify-between">
+    <div className="lg:flex justify-between bg-black">
        <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
           <h2 className="hollow-text text-7xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
             Contact US

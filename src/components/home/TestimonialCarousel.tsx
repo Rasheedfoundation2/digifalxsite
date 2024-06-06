@@ -42,7 +42,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
   };
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative max-w-4xl mx-auto text-white">
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-BlueNew-100 p-3 rounded-full"

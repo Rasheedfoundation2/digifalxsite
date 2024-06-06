@@ -6,7 +6,7 @@ const Jobs: React.FC = () => {
   return (
     <div>
       
-        <title>Careers | Starlight</title>
+        <title>Careers | Digifalx</title>
       <CareerSection />
     </div>
   );

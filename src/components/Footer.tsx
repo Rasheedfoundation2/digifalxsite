@@ -8,76 +8,79 @@ import { FcAbout } from "react-icons/fc";
 import { GrProjects } from "react-icons/gr";
 import { FaHome ,FaInstagram ,FaLinkedin,FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-black text-white py-12 rounded-t-3xl border-t-2 border-neutral-600">
+    <footer className=" bg-black text-white mt:6 rounded-t-2xl border-t-2 border-neutral-600">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center sm:justify-items-start space-y-8 ">
           <div className="pt-8 space-y-2  flex-col justify-center items-center">
             <div className="flex justify-center items-center">
-             <Image src="/assets/images/white.svg" alt="logo" width={60} height={60}/>
+             <Image src="/assets/images/white.svg" alt="logo" width={80} height={80}/>
              </div>
-             <h2 className="text-2xl font-bold">Want to Start a Project?</h2>
-               <Link href={"/contactus"}>
-                <button className="relative align-middle mt-2 bg-lime-600 px-4 py-2 rounded">
+             <h2 className="text-4xl font-bold text-center">Want to Start a Project?</h2>
+               <Link href={"/contactus"} className="flex justify-center items-center">
+                <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
                   Lets Talks
                 </button>
                 </Link> 
           </div>
 
-        <div className='flex space-x-10 justify-items-center lg:pl-14'>
+        <div className='flex space-x-16 justify-center lg:pl-12'>
           <div className="space-y-2">
-            <h3 className="font-bold">Explore</h3>
-            <ul className="space-y-1">
+            <h3 className="font-bold text-2xl">Explore</h3>
+            <ul className="space-y-2">
               <li className="flex items-center">
-                <FaHome className="mr-2" /><a href="#" className="text-white">Home</a>
+              <p className="flex text-lg"><FaHome className="mr-2" /><Link href="/home" className="text-white">Home</Link></p>
               </li>
               <li className="flex items-center">
-                <FcAbout className="mr-2" /><a href="#" className="text-white">About</a>
+              <p className="flex text-lg"><FcAbout className="mr-2" /><Link href="/aboutus" className="text-white">About</Link></p>
               </li>
               <li className="flex items-center">
-                <SiTalenthouse className="mr-2" /><a href="#" className="text-white">Talent</a>
+              <p className="flex text-lg"><MdHomeRepairService className="mr-2" /><Link href="/servicespage" className="text-white">Services</Link></p>
               </li>
               <li className="flex items-center">
-                <MdHomeRepairService className="mr-2" /><a href="#" className="text-white">Services</a>
+              <p className="flex text-lg"><GrProjects className="mr-2" /><Link href="/ourworks" className="text-white">Our Work</Link></p>
               </li>
               <li className="flex items-center">
-                <GrProjects className="mr-2" /><a href="#" className="text-white">Our Work</a>
+              <p className="flex text-lg"><SiTalenthouse className="mr-2" /><Link href="/talent" className="text-white">Talent</Link></p>
+              </li>
+              <li className="flex items-center">
+                <p className="flex text-lg"><MdOutlineWorkOutline className="mr-2" /><Link href="/joinus" className="text-white">Careers</Link></p>
               </li>
             </ul>
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-bold">Get In Touch</h3>
-            <div className="space-y-1">
-              <p className="flex items-center"><MdLocationOn className="mr-2" />Dubai</p>
-              <p className="flex items-center"><MdLocationOn className="mr-2" />Navi Mumbai</p>
-              <p className="flex items-center"><IoMail className="mr-2" /><a href="mailto:info@digifalx.com" className="text-white">info@digifalx.com</a></p>
-              <p className="flex items-center"><MdOutlinePhone className="mr-2" /><a href="tel:+971547368162" className="text-white">+971 547368162</a></p>
+            <h3 className="font-bold text-2xl">Get In Touch</h3>
+            <div className="space-y-2">
+              <p className="flex items-center text-lg"><MdLocationOn className="mr-2" />Dubai</p>
+              <p className="flex items-center text-lg"><MdLocationOn className="mr-2" />Navi Mumbai</p>
+              <p className="flex items-center text-lg"><IoMail className="mr-2" /><a href="mailto:info@digifalx.com" className="text-white">info@digifalx.com</a></p>
+              <p className="flex items-center text-lg"><MdOutlinePhone className="mr-2" /><a href="tel:+971547368162" className="text-white">+971 547368162</a></p>
             </div>
           </div>
         </div>
 
-          <div className="space-y-2">
-              <h3 className="font-bold">Socials</h3>
+          <div className="flex space-y-2">
               <div className="flex-col space-y-2">
+               <h3 className="font-bold text-2xl">Socials</h3>
                <div>
-                <a href="#" >
-                  <FaFacebook className="text-black bg-white rounded-full p-1 w-8 h-8 inline-flex"/>  Facebook
+                <a href="#">
+                  <FaFacebook className="text-blue-600 rounded-full p-1 w-8 h-8 inline-flex"/>  Facebook
                 </a></div>
                 <div>
                 <a href="#" >
-                   <FaLinkedin className="text-black bg-white rounded-full  p-1 w-8 h-8 inline-flex" /> Linked-In
-                </a>
-                </div>
+                   <FaLinkedin className="text-blue-700 rounded-full  p-1 w-8 h-8 inline-flex" />   Linked-In
+                </a> </div>
                 <div>
                 <a href="#" >
-                   <FaInstagram className="text-black bg-white rounded-full  p-1 w-8 h-8 inline-flex " /> Instagram
+                   <FaInstagram className="text-pink-600 rounded-full  p-1 w-8 h-8 inline-flex " />   Instagram
                 </a></div>
                 <div>
                 <a href="#" >
-                <FaSquareXTwitter className="text-black bg-white rounded-full p-1 w-8 h-8 inline-flex" /> Twitter
+                <FaSquareXTwitter className="text-white rounded-full p-1 w-8 h-8 inline-flex" /> Twitter
                 </a></div>
               </div>
             </div>

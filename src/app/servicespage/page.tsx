@@ -5,7 +5,7 @@ import Banner from '@/components/ourworkscompo/Banner';
 
 const ServicesPage = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <div className="lg:flex">
       {/* Rotated "Our Services" text */}
       <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">

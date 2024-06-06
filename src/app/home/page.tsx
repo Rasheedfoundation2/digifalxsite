@@ -7,7 +7,7 @@ import OurProjects from "@/components/home/whychooseus2";
 
 export default function HomePage() {
     return (
-      <main>
+      <main className="bg-black">
         <HeroSection/>
 
         {/* Services Card*/}

@@ -35,7 +35,7 @@ const CaseStudies = () => {
   }, []);
 
   return (
-    <div className="text-center">
+    <div className="text-center bg-black">
       <h1 className="hollow-text text-7xl font-bold mt-4">Case Studies</h1>
       <section
         style={{ backgroundColor: backgroundColors[currentIndex] }}
