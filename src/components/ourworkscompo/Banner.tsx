@@ -8,10 +8,10 @@ const Banner = () => {
         <div
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('/assets/images/img4.jpg')",
+            backgroundImage: "url('/assets/images/img1.jpg')",
           }}
         ></div>
-        <div className=" shadow-[inset_1px_4px_30px_29px_#412D86F4]  shadow-black  opacity-70 rounded-lg absolute top-0 left-0 w-full h-full   "></div>
+        <div className=" shadow-[inset_1px_4px_30px_29px_#412D86F4]  shadow-black  opacity-70 rounded-lg absolute top-0 left-0 w-full h-full"></div>
         <div className="relative p-6">
           <h2 className="text-white text-2xl lg:text-5xl font-bold mb-4 m-4 ml-12">Lets Make something</h2>
           <p className="text-white text-xl lg:text-3xl mb-4 m-6 ml-12">Great Together !   </p>

@@ -1,11 +1,10 @@
 
-import Counter1 from "@/components/aboutpage/Counter1";
-import TestimonialSlide from "../home/TestimonialSlide";
+import Counter1 from "@/components/aboutpage/CounterNumberSet";
+import TestimonialSlide from "@/components/home/TestimonialSlide";
 import TwoColumnGrid from "@/components/aboutpage/TwoColumnGrid";
 import TeamCarousel from "@/components/aboutpage/TeamCarousel";
 import Link from "next/link";
-//import { InfiniteMovingCards } from "@/components/aboutpage/infinite-moving-cards";
-import { teamMembers } from "./teamMembers";
+import { teamMembers } from "@/components/aboutpage/TeamMembers";
 
 const testimonialItems = teamMembers.map((member) => ({
   comment: `${member.name} - ${member.title}`,
@@ -42,9 +41,9 @@ export default function About(){
         {/* our Team section */}
       <section>
         <div className="text-center">
-          <h1 className="hollow-text text-7xl font-bold mt-4">Our Team</h1>
+          <h1 className="hollow-text text-7xl font-bold mt-12">Our Team</h1>
           <h2 className="text-4xl font-bold mb-1 text-center">Our Team consists of a group of talents</h2>
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center">
             <Link href="/joinus">
               <button className="px-6 py-2 bg-BlueNew-100 text-black rounded-full hover:bg-white hover:text-black hover:border hover:border-black hover:shadow-[0_0_10px_rgba(0,0,0,0.6)] transition duration-300">
                 Join our team
@@ -52,12 +51,12 @@ export default function About(){
             </Link>
           </div>
           <div className="justify-items-center">
-            <TeamCarousel/>
-              {/* <InfiniteMovingCards
+             <TeamCarousel/> 
+               {/* <InfiniteMovingCards
                   items={testimonialItems}
                   direction="left"
                   speed="slow"
-                /> */}
+                />  */}
            </div>
         </div>
       </section>

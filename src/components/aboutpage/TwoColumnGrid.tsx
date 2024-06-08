@@ -5,7 +5,7 @@ import Link from 'next/link';
 const TwoColumnGrid: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-full  bg-black">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-6xl  h-fit mx-auto bg-white p-6 rounded-lg shadow-lg mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-6xl  h-fit mx-auto bg-neutral-200 p-6 rounded-lg shadow-lg mt-16">
         {/* Left Column with Random Image */}
         <div className="flex justify-center items-center">
           <img 

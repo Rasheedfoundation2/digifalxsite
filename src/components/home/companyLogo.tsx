@@ -14,7 +14,7 @@ const logos = [
 function LogoSection() {
   return (
     <div className="mt-10 text-white text-center bg-black">
-      <p className="mb-4 text-white text-5xl">DIGIFALX HELPS MORE COMPANIES GROW FASTER</p>
+      <p className="mb-4 text-white text-3xl">DIGIFALX HELPS MORE COMPANIES GROW FASTER</p>
       <div className="overflow-hidden">
         <div className="flex animate-scroll space-x-8">
           {logos.map((logo, index) => (

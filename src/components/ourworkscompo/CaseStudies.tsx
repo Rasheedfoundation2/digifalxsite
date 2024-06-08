@@ -10,10 +10,10 @@ const caseStudies = [
 ];
 
 const backgroundColors = [
-  "#27BC9E", // Hex color for bg-purple-800
-  "#27BC9E", // Hex color for bg-purple-600
-  "#27BC9E", // Hex color for bg-purple-700
-  "#27BC9E", // Hex color for bg-purple-500
+  "#28A6BC", // Hex color for bg-purple-800
+  "#28A6BC", // Hex color for bg-purple-600
+  "#28A6BC", // Hex color for bg-purple-700
+  "#28A6BC", // Hex color for bg-purple-500
 ];
 
 const CaseStudies = () => {

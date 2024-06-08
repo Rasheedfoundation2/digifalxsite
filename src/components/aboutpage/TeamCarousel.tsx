@@ -7,8 +7,8 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import Link from 'next/link';
 import 'react-multi-carousel/lib/styles.css';
-import { teamMembers } from '@/components/aboutpage/teamMembers';
-import { FaArrowLeft, FaArrowRight, FaFacebook, FaTwitter, FaLinkedin , FaInstagram } from 'react-icons/fa';
+import { teamMembers } from '@/components/aboutpage/TeamMembers';
+import { FaFacebook, FaLinkedin , FaInstagram } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 
 const responsive = {
@@ -35,7 +35,7 @@ const TeamCarousel: React.FC = () => {
   
     <Carousel responsive={responsive}>
       {teamMembers.map((member) => (
-        <div key={member.id} className="p-6 ">
+        <div key={member.id} className="p-8">
           <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden m-12 transform hover:scale-105 hover:shadow-xl duration-300  ">
             <img src={member.image} alt={member.name} className="w-full h-80  object-fit rounded-lg mb-4 justify-center" />
             <div className="p-4">

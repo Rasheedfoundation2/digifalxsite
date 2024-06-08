@@ -1,27 +1,27 @@
-import TestimonialCarousel from '@/components/home/TestimonialCarousel';
+import TestimonialCarousel from '@/components/home/TestimonialCarousel1';
 
 const slides = [
   {
     title: 'Best Digital MArketing Service',
-    text: 'Digifalx\'s website, social media, and third-party review platforms feature testimonials from numerous clients, providing a comprehensive understanding of their reputation, service quality, and overall client satisfaction.',
+    text: 'One of the standout aspects of working with Digifalx Digital Marketing is their transparent and communicative approach. They provide regular updates and detailed reports, so I always know exactly how my campaigns are performing. Their team is always available to answer questions and provide insights, making the entire process seamless and stress-free.',
     mainImage: { src: '/assets/images/img2.jpg', alt: 'Main Image' },
-    name: 'Ricardo Harold',
+    name: 'Rohan Sharma',
     role: 'UI/UX Designer',
     rating: 5,
   },
   {
     title: 'Great Experiance',
-    text: 'Digifalx\'s website, social media, and third-party review platforms feature testimonials from numerous clients, providing a comprehensive understanding of their reputation, service quality, and overall client satisfaction.',
+    text: 'I highly recommend Digifalx Digital Marketing to any business looking to improve their online presence and achieve tangible results. Their dedication, expertise, and outstanding customer service set them apart from the competition. Thank you, XYZ Digital Marketing, for helping my business grow and succeed!.',
     mainImage: { src: '/assets/images/img1.jpg', alt: 'Main Image' },
-    name: 'Donald Trump',
+    name: 'Salman',
     role: 'Web Designer',
     rating: 4.5,
   },
   {
     title: 'Fast Services',
-    text: 'Digifalx\'s website, social media, and third-party review platforms feature testimonials from numerous clients, providing a comprehensive understanding of their reputation, service quality, and overall client satisfaction.',
+    text: 'The results have been nothing short of phenomenal. Within just a few months, my website traffic increased by over 50%, and I saw a significant boost in lead generation. Their expertise in SEO, content marketing, and social media management has been instrumental in achieving these results. The content they produce is top-notch, engaging, and perfectly tailored to my target audience.',
     mainImage: { src: '/assets/images/img3.jpg', alt: 'Main Image' },
-    name: 'Rishi sunak',
+    name: 'Mahesh patil',
     role: 'Marketing Manager',
     rating: 5,
   },

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import FAQ from '@/components/careers/DigiChampsFAQ';
+import FAQ from '@/components/careers/DigiChampsFAQ1';
 import BenefitsBanner from '@/components/careers/BenefitsBanner';
 import Form from '@/components/careers/Form2';
 

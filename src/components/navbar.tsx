@@ -1,8 +1,8 @@
 "use client";
-import { Button } from "./ui/moving-border";
+import logo from "@/app/white.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, } from "react";
+import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -95,35 +95,31 @@ export default function Navbar() {
   const [animationParent] = useAutoAnimate();
   const [isSideMenuOpen, setSideMenue] = useState(false);
 
-  useEffect(() => {
-    // This will ensure the state is updated correctly on the client-side
-  }, [isSideMenuOpen]);
-
-  function openSideMenu() {
+  const openSideMenu = () => {
     setSideMenue(true);
-  }
+  };
   
-  function closeSideMenu() {
+  const closeSideMenu = () => {
     setSideMenue(false);
-  }
+  };
 
   return (
-    <div className="mx-auto  flex  w-full justify-between px-4 py-1 text-sm  bg-black boxShadow border-b-2 border-neutral-600">
+    <div className="mx-auto flex w-full justify-between px-4 py-1 text-sm bg-black boxShadow border-b-2 border-neutral-600">
       {/* left side */}
       <section className="ml-10">
         {/* logo */}
-        <Image src='assets/images/white.svg' alt="logo" width={60} height={74}/>
-        </section>
+        <Link href="/"><Image src={logo} alt="logo" className="w-16 h-16"/></Link>
+      </section>
       <section ref={animationParent} className="flex items-center gap-10 font-semibold">
-     
         {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
         <div className="hidden md:flex items-center gap-4 transition-all">
           {navItems.map((d, i) => (
             <Link
               key={i}
               href={d.link ?? "#"}
-              className="relative group px-2 py-3 transition-all " >
-              <p className="flex cursor-pointer items-center gap-2 text-base text-white group-hover:text-GreenNew-100">
+              className="relative group px-2 py-3 transition-all"
+            >
+              <p className="flex cursor-pointer items-center gap-2 text-base text-white group-hover:text-BlueNew-100">
                 <span>{d.label}</span>
                 {d.children && (
                   <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
@@ -131,7 +127,7 @@ export default function Navbar() {
               </p>
               {/* dropdown */}
               {d.children && (
-                <div className="absolute right-0 top-10 hidden w-auto flex-col gap-1 rounded-lg bg-white py-3 shadow-md transition-all group-hover:flex z-30">
+                <div className="absolute right-0 top-12 hidden w-auto flex-col gap-1 rounded-lg bg-white py-3 shadow-md transition-all group-hover:flex z-30">
                   {d.children.map((ch, i) => (
                     <Link
                       key={i}
@@ -158,12 +154,11 @@ export default function Navbar() {
 
       {/* right side data */}
       <section className="hidden md:flex items-center gap-8 pr-10">
-      <Link href={"/contactus"}>
-      <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
+        <Link href={"/contactus"}>
+          <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
             Lets Talk
           </button>
-          </Link> 
-          
+        </Link> 
       </section>
 
       <FiMenu
@@ -178,7 +173,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
     <div className="fixed left-0 top-1 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden z-30">
       <div className="h-full w-[80%] bg-black px-4 py-4 border border-slate-600">
-        <section className="flex  justify-end">
+        <section className="flex justify-end">
           <AiOutlineClose
             onClick={closeSideMenu}
             className="cursor-pointer text-4xl text-white"
@@ -198,10 +193,10 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
         </div>
 
         <section className="flex flex-col gap-8 mt-4 items-center">
-        <Link href={"/contactus"}>
-        <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
-             Lets Talks
-          </button>
+          <Link href={"/contactus"}>
+            <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
+              Lets Talks
+            </button>
           </Link>
         </section>
       </div>
@@ -213,13 +208,9 @@ function SingleNavItem(d: NavItem) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
-  useEffect(() => {
-    // This will ensure the state is updated correctly on the client-side
-  }, [isItemOpen]);
-
-  function toggleItem() {
+  const toggleItem = () => {
     setItem(!isItemOpen);
-  }
+  };
 
   return (
     <div ref={animationParent}>
@@ -232,9 +223,7 @@ function SingleNavItem(d: NavItem) {
           <span>{d.label}</span>
           {d.children && (
             <IoIosArrowDown
-              className={`text-xs transition-all ${
-                isItemOpen && "rotate-180"
-              }`}
+              className={`text-xs transition-all ${isItemOpen && "rotate-180"}`}
             />
           )}
         </p>
