@@ -43,13 +43,6 @@ export default function About(){
         <div className="text-center">
           <h1 className="hollow-text text-7xl font-bold mt-12">Our Team</h1>
           <h2 className="text-4xl font-bold mb-1 text-center">Our Team consists of a group of talents</h2>
-          <div className="flex justify-center">
-            <Link href="/joinus">
-              <button className="px-6 py-2 bg-BlueNew-100 text-black rounded-full hover:bg-white hover:text-black hover:border hover:border-black hover:shadow-[0_0_10px_rgba(0,0,0,0.6)] transition duration-300">
-                Join our team
-             </button>
-            </Link>
-          </div>
           <div className="justify-items-center">
              <TeamCarousel/> 
                {/* <InfiniteMovingCards

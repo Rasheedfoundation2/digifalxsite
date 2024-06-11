@@ -69,6 +69,7 @@ const CaseStudies = () => {
           }
         `}</style>
       </section>
+      
     </div>
   );
 };

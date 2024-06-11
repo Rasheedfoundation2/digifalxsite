@@ -38,13 +38,13 @@ const ContactPage = () => {
       </div>
       <div className="relative flex justify-center mt-10 mb-10 flex-auto">
         <div className="grid lg:grid-cols-[1fr_2fr] sm:grid-cols-1 max-w-7xl gap-5">
-          <div className="w-full bg-neutral-100 p-8 rounded-lg border-neutral-300 border-2 lg:order-2 order-1">
+          <div className="w-full bg-graycard p-8 rounded-lg lg:order-2 order-1">
             <form onSubmit={handleSubmit}>
-              <div className="text-4xl text-black font-bold mb-2 text-center">Message Us</div>
+              <div className="text-4xl text-whiteheading font-bold mb-2 text-center">Message Us</div>
               <div className="mb-4">
-                <label className="block text-black mb-1" htmlFor="fullName">Full Name</label>
+                <label className="block text-graysubheading mb-1" htmlFor="fullName">Full Name</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 bg-neutral-200 text-black rounded border-neutral-300 border-2"
+                  className="w-full px-3 py-2 mt-1 text-graysubheading rounded bg-black"
                   type="text"
                   name="fullName"
                   id="fullName"
@@ -54,9 +54,9 @@ const ContactPage = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-black mb-1" htmlFor="email">Email Address</label>
+                <label className="block text-graysubheading mb-1" htmlFor="email">Email Address</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 bg-neutral-200 text-black rounded border-neutral-300 border-2"
+                  className="w-full px-3 py-2 mt-1 text-graysubheading roundedtext-graysubheading bg-black"
                   type="email"
                   name="email"
                   id="email"
@@ -66,9 +66,9 @@ const ContactPage = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-black mb-1" htmlFor="subject">Subject</label>
+                <label className="block text-graysubheading mb-1" htmlFor="subject">Subject</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 bg-neutral-200 text-black rounded border-neutral-300 border-2"
+                  className="w-full px-3 py-2 mt-1 rounded text-graysubheading bg-black"
                   type="text"
                   name="subject"
                   id="subject"
@@ -78,9 +78,9 @@ const ContactPage = () => {
                 />
               </div>
               <div className="mb-6">
-                <label className="block text-black mb-1" htmlFor="message">Message</label>
+                <label className="block text-graysubheading mb-1" htmlFor="message">Message</label>
                 <textarea
-                  className="w-full px-3 py-2 mt-1 bg-neutral-200 text-black rounded border-neutral-300 border-2"
+                  className="w-full px-3 py-2 mt-1  text-graysubheading bg-black rounded"
                   name="message"
                   id="message"
                   rows={4}
@@ -91,7 +91,7 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
-                className="w-full py-2 text-center text-white bg-BlueNew-100 rounded hover:bg-black">
+                className=" w-36 py-2 text-center text-white border-2 border-BlueNew">
                 Send Message
               </button>
             </form>

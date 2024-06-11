@@ -44,21 +44,21 @@ function OurServices() {
       {/* Main content */}
       <div className="w-full overflow-hidden">
         <div className="flex justify-center w-full max-w-screen-xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {services.map((service, index) => (
-                <BackgroundGradient key={index} className="flex flex-col justify-between h-full rounded-[22px] p-4 sm:p-6 md:p-8 lg:p-10 bg-white dark:bg-zinc-900">
+                <BackgroundGradient key={index} className="flex flex-col justify-between h-full p-4 sm:p-6 md:p-8 lg:p-10 bg-graycard">
                   <Image
                     src={service.image}
                     alt={service.title}
-                    height={200}
+                    height={100}
                     width={300}
                     className="object-contain w-full"
                   />
                   <div>
-                    <p className="text-sm sm:text-base md:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+                    <p className="text-sm sm:text-base md:text-xl text-whiteheading mt-4 mb-2">
                       {service.title}
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-400">
+                    <p className="text-xs sm:text-sm md:text-base text-graysubheading">
                       {service.description}
                     </p>
                   </div>
@@ -70,12 +70,6 @@ function OurServices() {
                 </BackgroundGradient>
               ))}
             </div>
-        </div>
-
-        <div className="mt-20 text-center">
-          <Link href="/Servicespage" className="inline-block px-4 py-2 rounded-full border-2 border-neutral-600 text-white bg-black hover:bg-BlueNew-100 transition duration-200">
-            View All Services
-          </Link>
         </div>
       </div>
       <style jsx>{`

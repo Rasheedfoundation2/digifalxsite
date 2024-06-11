@@ -91,10 +91,10 @@ export function OurWorks() {
     <div className="bg-black text-white">
       {/* Projects Grid */}
       <div className="max-w-7xl mx-auto py-8 px-12">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 sm:justify-items-streatch">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 sm:justify-items-streatch justify-center items-center">
           {projects.map((project) => (
             <DirectionAwareHover key={project.id} imageUrl={project.image}>
-              <div className="bg-white text-black rounded-lg overflow-hidden w-full max-w-xs">
+              <div className="bg-white text-black overflow-hidden w-full max-w-xs">
                 <Image
                   src={project.image}
                   alt={project.title}

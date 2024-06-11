@@ -19,8 +19,11 @@ export default function HomePage() {
         {/* Our Works */}
         <OurProjects/> 
 
+        {/* Company logo corousal */}
+        <LogoSection/>
+
         {/* Testimonial */}
-        <div className="lg:flex  my-10 border-t-2 border-neutral-500 mt-4">
+        <div className="lg:flex  my-10 mt-5 mb-5">
           <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
             <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
               Testimonials
@@ -31,8 +34,7 @@ export default function HomePage() {
         </div>
         </div>
 
-        {/* Company logo corousal */}
-        <LogoSection/>
+        
       
     </main>
     );

@@ -30,12 +30,9 @@ const slides = [
 
 const TestimonialSlide = () => {
   return (
-    <div className="flex justify-center items-center h-full  bg-black">
-      <div className="grid lg:grid-cols-[1fr_2fr] md:grid-cols-2 gap-2 max-w-6xl border-2 border-neutral-500 h-fit mx-auto bg-black p-6 rounded-lg shadow-lg mt-10">
-        {/* Left Column with Random Image */}
-        <div className="lg:flex lg:justify-items-center  mt-[40%]">
-          <h3 className=" text-white  text-6xl font-bold mb-4">What Our Client Says About Us</h3>
-        </div>
+    <div className="flex justify-center items-center h-full  bg-black mb-10 mt-10">
+      <div className=" gap-2 max-w-6xl  h-fit mx-auto bg-black p-6 rounded-lg shadow-lg mt-10">
+
         
         {/* Right Column with Text and Button */}
         <div className="flex justify-center items-center text-white">

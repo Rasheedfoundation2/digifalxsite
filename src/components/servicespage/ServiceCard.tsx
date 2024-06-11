@@ -11,12 +11,12 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, image, features }) => {
     const [isHovered, setIsHovered] = useState(false);
   return (
-    <div  className="max-w-sm h-11/12 w-9/12 rounded overflow-hidden bg-white shadow-lg m-4 relative"
+    <div  className="max-w-sm h-11/12 w-9/12 rounded overflow-hidden bg-graycard shadow-lg m-4 relative"
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
   >
     <div className="px-6 py-4">
-      <div className="font-bold text-black text-2xl  text-center mb-2">{title}</div>
+      <div className="font-bold text-graysubheading text-2xl  text-center mb-2">{title}</div>
      
         <img className="h-3/4 w-full pb-4" src={image} alt={title} />
     </div>

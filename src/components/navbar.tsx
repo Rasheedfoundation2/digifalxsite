@@ -25,6 +25,10 @@ const navItems: NavItem[] = [
     link: "/aboutus"
   },
   {
+    label: "OUR WORK",
+    link: "/ourworks",
+  },
+  {
     label: "SERVICES",
     link: "/servicespage",
     children: [
@@ -50,31 +54,6 @@ const navItems: NavItem[] = [
       },
     ]
   },
-  
-  {
-    label: "OUR WORK",
-    link: "/ourworks",
-    children: [
-      {
-        label: "CASE STUDY",
-        link: "/casestudy",
-      },
-    ]
-  },
-  {
-    label: "TALENT",
-    link: "#",
-    children: [
-      {
-        label: "INFLUENCER",
-        link: "#",
-      },
-      {
-        label: "DESIGN-TEMP",
-        link: "#",
-      }
-    ]
-  },
   {
     label: "CAREER",
     link: "/joinus",
@@ -86,8 +65,12 @@ const navItems: NavItem[] = [
     ]
   },
   {
+    label: "TALENT",
+    link: "raheed.digifalx.com"
+  },
+  {
     label: "BLOGS",
-    link: "/aboutus"
+    link: "/blogs"
   }
 ];
 
@@ -119,7 +102,7 @@ export default function Navbar() {
               href={d.link ?? "#"}
               className="relative group px-2 py-3 transition-all"
             >
-              <p className="flex cursor-pointer items-center gap-2 text-base text-white group-hover:text-BlueNew-100">
+              <p className="flex cursor-pointer items-center gap-2 text-sm text-white group-hover:text-BlueNew-100">
                 <span>{d.label}</span>
                 {d.children && (
                   <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
@@ -127,12 +110,12 @@ export default function Navbar() {
               </p>
               {/* dropdown */}
               {d.children && (
-                <div className="absolute right-0 top-12 hidden w-auto flex-col gap-1 rounded-lg bg-white py-3 shadow-md transition-all group-hover:flex z-30">
+                <div className="absolute right-0 top-12 hidden w-auto flex-col gap-1 rounded bg-graycard py-3 shadow-md transition-all group-hover:flex z-30">
                   {d.children.map((ch, i) => (
                     <Link
                       key={i}
                       href={ch.link ?? "#"}
-                      className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-BlueNew-100"
+                      className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-whiteheading hover:text-BlueNew"
                     >
                       {/* image */}
                       {ch.iconImage && (
@@ -155,7 +138,7 @@ export default function Navbar() {
       {/* right side data */}
       <section className="hidden md:flex items-center gap-8 pr-10">
         <Link href={"/contactus"}>
-          <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
+          <button className="px-6 py-2 bg-black text-neutral-100  outline outline-offset-2 outline-BlueNew hover:bg-BlueNew hover:text-white hover:outline hover:outline-white transition-colors">
             Lets Talk
           </button>
         </Link> 
@@ -194,7 +177,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
 
         <section className="flex flex-col gap-8 mt-4 items-center">
           <Link href={"/contactus"}>
-            <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
+            <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-BlueNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
               Lets Talks
             </button>
           </Link>
@@ -235,7 +218,7 @@ function SingleNavItem(d: NavItem) {
             <Link
               key={i}
               href={ch.link ?? "#"}
-              className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-GreenNew-100"
+              className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-BlueNew-100"
             >
               {/* image */}
               {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}

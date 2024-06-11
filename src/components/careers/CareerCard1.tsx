@@ -24,16 +24,16 @@ const CareerCard: React.FC<CareerCardProps> = ({ image,title, description, respo
 
   return (
     <div className="relative">
-      <div className="bg-neutral-100 p-9 rounded-lg shadow-lg" style={{ height: '300px' }}>
+      <div className="bg-graycard p-9 shadow-lg" style={{ height: '300px' }}>
       <div className="flex justify-center">
         <img src={image} alt={title} className="h-12 w-12" />
       </div>
-        <h2 className="text-xl font-semibold text-center text-gray-600 mt-4">{title}</h2>
-        <p className="text-gray-600 text-center mt-2">{description}</p>
+        <h2 className="text-xl font-semibold text-center text-graysubheading mt-4">{title}</h2>
+        <p className="text-graysubheading text-center mt-2">{description}</p>
         <div className="flex justify-center mt-4">
           <button
             onClick={toggleModal}
-            className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-black transition-colors">
+            className="px-6 py-2 bg-black text-neutral-100  outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-black transition-colors">
           View Details
           </button>
         </div>

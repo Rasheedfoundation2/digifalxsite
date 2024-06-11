@@ -10,27 +10,50 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white border-t-2 border-neutral-600">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="pt-4 space-y-2 flex flex-col justify-center items-center bg-BlueNew-100 px-16 pb-6">
+        <div className="pt-4 space-y-2 flex flex-col justify-center items-center bg-graycard px-16 pb-6">
           <div className="flex justify-center items-center">
             <Link href="/"><Image src={logo} alt="logo" width={80} height={80} /></Link>
           </div>
           <h2 className="text-5xl font-bold text-center hollow-text">Want to Start a Project?</h2>
           <Link href="/contactus" className="flex justify-center items-center">
-            <button className="mt-4 px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-white hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
+            <button className="mt-4 px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-white hover:bg-graycard hover:text-white hover:outline hover:outline-white transition-colors">
               Lets Talks
             </button>
           </Link>
-        </div>
 
-        <div className="flex flex-col md:flex-row space-x-2 justify-evenly w-full mt-4">
-          <div className="space-y-2">
+          <div className="inline-flex space-x-4 pt-5">
+            <div>
+              <a href="#">
+                <FaFacebook className="text-blue-600 rounded-full p-1 w-8 h-8 inline-flex" /> 
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <FaLinkedin className="text-blue-700 rounded-full p-1 w-8 h-8 inline-flex" /> 
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <FaInstagram className="text-pink-600 rounded-full p-1 w-8 h-8 inline-flex" /> 
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <FaSquareXTwitter className="text-white rounded-full p-1 w-8 h-8 inline-flex" /> 
+              </a>
+            </div>
+          </div>
+        </div>
+ 
+        <div className="flex flex-col md:flex-row space-x-2 justify-evenly w-[90%] mt-4">
+          <div className="space-y-2 pl-2">
             <h3 className="font-bold text-2xl">Explore</h3>
             <ul className="space-y-1">
               <li className="flex items-center">
-                <p className="flex text-base"><Link href="/" className="text-white">Home</Link></p>
+                <p className="flex "><Link href="/" className="text-white">Home</Link></p>
               </li>
               <li className="flex items-center">
-                <p className="flex text-base"><Link href="/aboutus" className="text-white">About</Link></p>
+                <p className="flex text"><Link href="/aboutus" className="text-white">About</Link></p>
               </li>
               <li className="flex items-center">
                 <p className="flex text-base"><Link href="/servicespage" className="text-white">Services</Link></p>
@@ -57,29 +80,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <h3 className="font-bold text-2xl">Socials</h3>
-            <div>
-              <a href="#">
-                <FaFacebook className="text-blue-600 rounded-full p-1 w-8 h-8 inline-flex" /> Facebook
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <FaLinkedin className="text-blue-700 rounded-full p-1 w-8 h-8 inline-flex" /> Linked-In
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <FaInstagram className="text-pink-600 rounded-full p-1 w-8 h-8 inline-flex" /> Instagram
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <FaSquareXTwitter className="text-white rounded-full p-1 w-8 h-8 inline-flex" /> Twitter
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
 
