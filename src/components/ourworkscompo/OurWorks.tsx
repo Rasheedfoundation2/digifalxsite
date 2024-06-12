@@ -10,32 +10,32 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover"; // 
 const projects = [
   {
     id: 1,
-    title: "Email Marketing",
-    category: "Marketing Agency",
+    title: "Rasheed Foundation",
+    category: "Marketing services",
     image: "/assets/images/img1.jpg",
   },
   {
     id: 2,
-    title: "In the mountains",
-    category: "$1299 / night",
+    title: "RB-Royal Services",
+    category: "Social Marketing",
     image: "/assets/images/img2.jpg",
   },
   {
     id: 3,
-    title: "In the mountains",
-    category: "$1299 / night",
+    title: "XYZ Real Estate",
+    category: "Web development",
     image: "/assets/images/img3.jpg",
   },
   {
     id: 4,
-    title: "In the mountains",
-    category: "$1299 / night",
+    title: "Zara",
+    category: "E-commerce / UI-UX",
     image: "/assets/images/img4.jpg",
   },
   {
     id: 5,
-    title: "In the mountains",
-    category: "$1299 / night",
+    title: "abc clinic",
+    category: "Digital marketing",
     image: "/assets/images/img5.jpg",
   },
   {
@@ -55,46 +55,17 @@ const logos = [
   { src: "/assets/images/creative.png" },
 ];
 
-const caseStudies = [
-  "DIGIFALX HELPS MORE COMPANIES GROW FASTER",
-  "DIGIFALX HELPS MORE COMPANIES GROW BETTER",
-  "DIGIFALX HELPS MORE COMPANIES GET TOGETHER",
-  "DIGIFALX HELPS MORE COMPANIES MAKE A BIGGER CHANGE",
-];
-
-const backgroundColors = [
-  "#6A0DAD",
-  "#7B68EE",
-  "#8A2BE2",
-  "#9370DB",
-];
-
 export function OurWorks() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextCaseStudy = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % caseStudies.length);
-  };
-
-  const prevCaseStudy = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? caseStudies.length - 1 : prevIndex - 1
-    );
-  };
-
-  useEffect(() => {
-    const interval = setInterval(nextCaseStudy, 5000); // Increased interval duration for slower animation
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white w-[100%] ">
       {/* Projects Grid */}
-      <div className="max-w-7xl mx-auto py-8 px-12">
+      <div className="flex lg:pl-52 py-8 justify-center items-center ">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 sm:justify-items-streatch justify-center items-center">
           {projects.map((project) => (
             <DirectionAwareHover key={project.id} imageUrl={project.image}>
-              <div className="bg-white text-black overflow-hidden w-full max-w-xs">
+              <div className="bg-graycard overflow-hidden w-full max-w-xs">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -103,8 +74,8 @@ export function OurWorks() {
                   className="object-cover w-full h-64"
                 />
                 <div className="p-4">
-                  <p className="text-lg font-bold">{project.title}</p>
-                  <p className="text-sm">{project.category}</p>
+                  <p className="text-lg font-bold text-whiteheading">{project.title}</p>
+                  <p className="text-sm text-graysubheading">{project.category}</p>
                 </div>
               </div>
             </DirectionAwareHover>

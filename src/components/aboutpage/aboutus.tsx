@@ -45,11 +45,7 @@ export default function About(){
           <h2 className="text-4xl font-bold mb-1 text-center">Our Team consists of a group of talents</h2>
           <div className="justify-items-center">
              <TeamCarousel/> 
-               {/* <InfiniteMovingCards
-                  items={testimonialItems}
-                  direction="left"
-                  speed="slow"
-                />  */}
+              
            </div>
         </div>
       </section>

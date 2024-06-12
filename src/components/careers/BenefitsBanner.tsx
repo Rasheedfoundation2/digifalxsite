@@ -12,7 +12,7 @@ const BenefitsBanner = () => {
         {benefits.map((benefit) => (
           <button
             key={benefit.name}
-            className={`px-6 py-4 rounded-md ${selectedBenefit.name === benefit.name ? 'bg-BlueNew-100' : 'bg-gray-700'}`}
+            className={`px-6 py-4 rounded-md ${selectedBenefit.name === benefit.name ? 'bg-BlueNew' : 'bg-graysubheading'}`}
             onClick={() => setSelectedBenefit(benefit)}>
             {benefit.name}
           </button>

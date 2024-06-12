@@ -63,7 +63,7 @@ const services = [
 const Services1: React.FC = () => {
   return (
     <div className='min-h-full'> 
-      <h1 className='text-white text-center text-7xl py-5 hollow-text'> Digital Marketing</h1>
+      <h1 className='text-whiteheading text-center text-7xl py-5 hollow-text'> Digital Marketing</h1>
     <div className="flex flex-wrap justify-center">
       
       {services.map((service) => (

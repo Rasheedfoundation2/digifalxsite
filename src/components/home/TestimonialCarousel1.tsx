@@ -47,22 +47,26 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
   }, []);
 
   return (
-    <div className="relative max-w-4xl mx-auto text-white">
+    <div className="relative max-w-xl mx-auto text-whiteheading h-[80%]">
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-BlueNew-100 p-3 rounded-full"
       >
         &lt;
       </button>
-      <div className="text-center p-10">
-        <h2 className="text-3xl font-bold mb-4">{slides[activeSlide].title}</h2>
-        <p className="text-lg mb-6">{slides[activeSlide].text}</p>
-        <div className="mt-6">
+      <div className="text-center p-10 h-[80%]">
+        <div className="">
+          <h2 className="text-3xl font-bold mb-4">{slides[activeSlide].title}</h2>
+          <p className="text-base mb-6 text-graysubheading">{slides[activeSlide].text}</p>
+        </div>
+
+        <div className="flex mt-10 border-t-2 border-white p-5">
           <img
             src={slides[activeSlide].mainImage.src}
             alt={slides[activeSlide].mainImage.alt}
-            className="w-24 h-24 rounded-full mx-auto mb-2"
+            className="w-24 h-24 rounded-full mx-auto mb-2 "
           />
+          <div>
           <h3 className="text-xl font-semibold">{slides[activeSlide].name}</h3>
           <p className="text-sm text-gray-600">{slides[activeSlide].role}</p>
           <div className="flex justify-center mt-2">
@@ -79,6 +83,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
               </svg>
             ))}
           </div>
+         </div> 
         </div>
       </div>
       <button

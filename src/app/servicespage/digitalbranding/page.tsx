@@ -4,7 +4,7 @@ import ServiceCard from '@/components/servicespage/ServiceCard';
 
 const services = [
   {
-    title: 'Company Profile & Communication',
+    title: 'Company Profile Development',
     image: '/assets/images/initial_card_image.png',
     features: [
       'Customized company profile design',

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/moving-border";
 
 function HeroSection() {
   return (
-    <div className='h-auto md:h-[40rem] text-white w-full rounded-md flex 
+    <div className='h-auto md:h-[42rem] text-white w-full rounded-md flex 
     flex-col md:flex-row items-center justify-between relative overflow-hidden 
     mx-auto md:py-0 bg-black'>
       <Spotlight

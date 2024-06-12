@@ -66,7 +66,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "TALENT",
-    link: "raheed.digifalx.com"
+    link: "/talent"
   },
   {
     label: "BLOGS",

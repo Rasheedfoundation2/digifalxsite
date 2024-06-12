@@ -13,16 +13,19 @@ const Digichamps: React.FC = () => {
 
   return (
     <div className="bg-black text-white">
+       <h1 className="text-6xl text-inherit m-2  py-8 lg:text-8xl flex justify-start item-center font-bold hollow-text">DIGICHAMPS</h1>
       {/* hero and About Section */}
-      <div className="relative w-screen h-screen">
+      <div className=' '>
+      <div className="relative w-[90%] h-[1/4] m-auto  bg-black bg-opacity-50">
         <img
           src="/assets/images/digichamps.png"
           alt="Digicamps banner"
-          className="object-cover w-full h-full"
+          className="object-cover w-full m-auto"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <h1 className="text-6xl text-inherit lg:text-8xl flex justify-center font-bold hollow-text">DIGICHAMPS</h1>
-        </div>
+        {/* <div className="absolute inset-0 flex items-center justify-center">
+         
+        </div> */}
+      </div>
       </div>
       <div className="flex justify-center items-center h-full w-full  mt-5 bg-black">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl h-fit mx-auto bg-black p-6 rounded-lg">
@@ -39,8 +42,8 @@ const Digichamps: React.FC = () => {
 
           {/* Right Column with Text and Button */}
           <div className="flex flex-col justify-center items-start p-6">
-            <h2 className=" text-white text-6xl font-bold mb-4 hollow-text flex justify-center">About Digichamps</h2>
-            <p className="text-white mb-6">
+            <h2 className=" text-graysubheading text-6xl font-bold mb-4 hollow-text flex justify-center">About Digichamps</h2>
+            <p className="text-graysubheading mb-6">
               Our Programme emphasizes providing you with practical skills and real-world experience in the dynamic fields of online presence, creative promotion, and visual storytelling.
             </p>
           </div>
@@ -49,23 +52,23 @@ const Digichamps: React.FC = () => {
 
       {/* Who can participate Section with Image circle */}
       <section className="p-8">
-        <h2 className="text-6xl font-bold mb-8 flex justify-center hollow-text">Who can participate</h2>
+        <h2 className="text-6xl font-bold mb-8 flex justify-start hollow-text">Who Can Participate</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {['Professionals', 'Startups', 'Innovators', 'Freelancers'].map((role) => (
             <div key={role} className="flex flex-col items-center justify-center">
               <div className="w-52 h-52 bg-neutral-100 rounded-full flex items-center justify-center">
                 <img src={`/assets/images/${role.toLowerCase()}-icon.png`} alt={role} className="text-black w-12 h-12"/>
               </div>
-              <p className="mt-4 font-bold text-2xl">{role}</p>
+              <p className="mt-4 font-bold text-graysubheading text-2xl">{role}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Application form section */}
-      <section className="p-8 justify-center items-center">
-        <h2 className="text-6xl font-bold hollow-text flex justify-center">How to participate?</h2>
-        <div className="p-8 mt-4">
+      <section className="p-1  justify-center items-center">
+        <h2 className="text-6xl ml-8 font-bold hollow-text flex justify-start">How To Participate?</h2>
+        <div className="p-8 mt-4  ">
           <Form />
         </div>
       </section>

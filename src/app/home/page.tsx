@@ -1,9 +1,12 @@
 import HeroSection from "../../components/home/HeroSection";
-import Services from "@/components/home/ServicesSection";
+// import Services from "@/components/home/ServicesSection";
 import LogoSection from "@/components/home/companyLogo";
 import TestimonialSlide from "@/components/home/TestimonialSlide";
 import Counter1 from "@/components/aboutpage/CounterNumberSet";
 import OurProjects from "@/components/home/OurProjects";
+import Services from "@/components/home/NewServicesSection";
+import ServiceNameBanner from "@/components/home/ServicecarousalBanner";
+
 
 export default function HomePage() {
     return (
@@ -34,6 +37,8 @@ export default function HomePage() {
         </div>
         </div>
 
+        {/* services Banner */}
+          <ServiceNameBanner/>
         
       
     </main>

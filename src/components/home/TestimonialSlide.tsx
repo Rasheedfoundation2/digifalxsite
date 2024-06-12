@@ -1,4 +1,5 @@
 import TestimonialCarousel from '@/components/home/TestimonialCarousel1';
+import CounterCircle from '../aboutpage/CounterCircle';
 
 const slides = [
   {
@@ -30,19 +31,30 @@ const slides = [
 
 const TestimonialSlide = () => {
   return (
-    <div className="flex justify-center items-center h-full  bg-black mb-10 mt-10">
-      <div className=" gap-2 max-w-6xl  h-fit mx-auto bg-black p-6 rounded-lg shadow-lg mt-10">
+    <div className="flex justify-center items-center md:h-[44rem] bg-black mb-10 mt-10">
+      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-2 h-full p-6 shadow-lg mt-10">
+       
 
-        
-        {/* Right Column with Text and Button */}
-        <div className="flex justify-center items-center text-white">
-            <TestimonialCarousel slides={slides} />
+        {/* left Column with Text and Button - place this second in mobile view */}
+        <div className="flex justify-center items-center text-white order-2 lg:order-1 ">
+          <TestimonialCarousel slides={slides} />
+        </div>
+
+         {/* right Column with Random Image - place this first in mobile view */}
+         <div className="flex justify-center items-center order-1 lg:order-2">
+          <div className="relative lg:top-4 lg:left-28 bg-black bg-opacity-80 text-white p-2 rounded-md">
+            <div>
+              <CounterCircle endCount={5} text="Satisfied Clients" duration={3000} character="+" />
+            </div>
+          </div>
+          <img
+            src="assets/images/initial_card_image.png"
+            alt="Random Image"
+            className="rounded-lg"
+          />
         </div>
       </div>
-      
     </div>
-      
-
   );
 };
 

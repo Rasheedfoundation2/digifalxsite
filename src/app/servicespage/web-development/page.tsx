@@ -87,7 +87,7 @@ const services = [
 const Services1: React.FC = () => {
   return (
     <div  className='min-h-full'> 
-    <h1 className='text-white text-center text-7xl py-5 hollow-text'> WEB DEVELOPMENT</h1>
+    <h1 className=' text-white text-center md:text-7xl text-6xl py-5 hollow-text'> WEB DEVELOPMENT</h1>
     <div className="flex flex-wrap justify-center">
       {services.map((service) => (
         <ServiceCard key={service.title} title={service.title} image={service.image} features={service.features} />

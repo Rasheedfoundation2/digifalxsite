@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 
 function OurProjects() {
@@ -137,17 +137,17 @@ function OurProjects() {
           className="w-full lg:w-[calc(100%-5rem)] overflow-hidden cursor-grab relative"
           ref={scrollRef}
         >
-          <div id="carousel" className="flex space-x-1 p-1">
+          <div id="carousel" className="flex space-x-1 p-1 ">
             {services.map((service, index) => (
-              <div key={index} className="flex-none w-80 h-[28rem]">
-                <div className=" w-full h-full p-4 bg-graycard dark:bg-neutral-00 mx-auto transition-all duration-300 hover:bg-neutral-800 flex flex-col justify-between">
-                  <div className="flex-grow flex justify-evenly">
+              <div key={index} className="flex-none w-80 h-[26rem]">
+                <div className=" w-full h-full p-2 pb-8 bg-graycard grayscale hover:grayscale-0 dark:bg-neutral-00 mx-auto transition-all duration-300 hover:bg-neutral-800 flex flex-col justify-between">
+                  <div className="flex-grow flex justify-evenly space ">
                     <Image
                       src={service.image}
                       alt={service.title}
                       height="400"
                       width="400"
-                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain   transition-all duration-300"
                     />
                   </div>
                   <div className="text-center mt-2">
@@ -157,26 +157,20 @@ function OurProjects() {
                     <p className="text-sm text-graysubheading mt-2">
                       {service.description}
                     </p>
-                    <div className="flex justify-center items-center">
-                      <button className="rounded-full justify-center px-4 py-2 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-                        <span>Click here</span>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
             ))}
+ 
           </div>
         </div>
-      </div>
-      <div className="my-10 text-center">
-        <Link
-          href="/ourworks"
-          className="px-4 py-2 rounded-md border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
-        >
-          View All Projects
-        </Link>
-      </div>
+        <div className="relative right-28  transform -translate-y-1/2  ">
+            <div className=" border-8 border-white rounded-full p-10 lg:mr-2 sm:mr-4">
+                <Link href="/ourworks"> 
+                <MdOutlineArrowOutward className="lg:h-8 lg:w-8 sm:h-4 sm:w-4 text-white" /> </Link>
+            </div>
+        </div>
+      </div>      
     </div>
   );
 }
