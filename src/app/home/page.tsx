@@ -6,12 +6,17 @@ import Counter1 from "@/components/aboutpage/CounterNumberSet";
 import OurProjects from "@/components/home/OurProjects";
 import Services from "@/components/home/NewServicesSection";
 import ServiceNameBanner from "@/components/home/ServicecarousalBanner";
-
+import Popup from "@/components/home/Popup";
 
 export default function HomePage() {
     return (
       <main className="bg-black">
-        <HeroSection/>
+          {/* Pop up details collection tab*/}
+        <Popup/>
+        <section className="mb-12">
+          <HeroSection/>
+        </section>
+        
 
         {/* Services Card*/}
         <Services/>
@@ -27,7 +32,7 @@ export default function HomePage() {
 
         {/* Testimonial */}
         <div className="lg:flex  my-10 mt-5 mb-5">
-          <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
+          <div className="lg:flex items-center justify-center text-center lg:w-44 lg:flex-shrink-0">
             <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
               Testimonials
            </h2> 
@@ -40,7 +45,7 @@ export default function HomePage() {
         {/* services Banner */}
           <ServiceNameBanner/>
         
-      
+        
     </main>
     );
   }

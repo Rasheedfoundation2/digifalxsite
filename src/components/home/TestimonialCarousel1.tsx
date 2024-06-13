@@ -1,4 +1,3 @@
-// components/TestimonialCarousel.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -50,26 +49,26 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
     <div className="relative max-w-xl mx-auto text-whiteheading h-[80%]">
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-BlueNew-100 p-3 rounded-full"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-BlueNew p-3 rounded-full"
       >
         &lt;
       </button>
       <div className="text-center p-10 h-[80%]">
         <div className="">
-          <h2 className="text-3xl font-bold mb-4">{slides[activeSlide].title}</h2>
-          <p className="text-base mb-6 text-graysubheading">{slides[activeSlide].text}</p>
+          <h2 className="text-3xl font-bold mb-10">{slides[activeSlide].title}</h2>
+          <p className="text-base mb-6 text-graysubheading h-56 overflow-hidden">{slides[activeSlide].text}</p>
         </div>
 
         <div className="flex mt-10 border-t-2 border-white p-5">
           <img
             src={slides[activeSlide].mainImage.src}
             alt={slides[activeSlide].mainImage.alt}
-            className="w-24 h-24 rounded-full mx-auto mb-2 "
+            className="w-24 h-24 rounded-full mb-2 "
           />
           <div>
-          <h3 className="text-xl font-semibold">{slides[activeSlide].name}</h3>
-          <p className="text-sm text-gray-600">{slides[activeSlide].role}</p>
-          <div className="flex justify-center mt-2">
+          <h3 className="text-xl font-semibold px-14 text-left">{slides[activeSlide].name}</h3>
+          <p className="text-sm text-gray-600 px-14 text-left">{slides[activeSlide].role}</p>
+          <div className="flex justify-left px-14 mt-2">
             {Array.from({ length: 5 }).map((_, i) => (
               <svg
                 key={i}
@@ -88,7 +87,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
       </div>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-BlueNew-100 p-3 rounded-full"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-BlueNew p-3 rounded-full"
       >
         &gt;
       </button>

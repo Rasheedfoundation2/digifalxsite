@@ -13,7 +13,7 @@ const Digichamps: React.FC = () => {
 
   return (
     <div className="bg-black text-white">
-       <h1 className="text-6xl text-inherit m-2  py-8 lg:text-8xl flex justify-start item-center font-bold hollow-text">DIGICHAMPS</h1>
+       <h1 className="text-6xl text-inherit m-2  py-8 lg:text-8xl flex justify-start item-center font-bold hollow-text ">DIGICHAMPS</h1>
       {/* hero and About Section */}
       <div className=' '>
       <div className="relative w-[90%] h-[1/4] m-auto  bg-black bg-opacity-50">
@@ -52,7 +52,7 @@ const Digichamps: React.FC = () => {
 
       {/* Who can participate Section with Image circle */}
       <section className="p-8">
-        <h2 className="text-6xl font-bold mb-8 flex justify-start hollow-text">Who Can Participate</h2>
+        <h2 className="text-6xl font-bold mb-8 flex justify-center hollow-text">Who Can Participate</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {['Professionals', 'Startups', 'Innovators', 'Freelancers'].map((role) => (
             <div key={role} className="flex flex-col items-center justify-center">
@@ -66,9 +66,9 @@ const Digichamps: React.FC = () => {
       </section>
 
       {/* Application form section */}
-      <section className="p-1  justify-center items-center">
-        <h2 className="text-6xl ml-8 font-bold hollow-text flex justify-start">How To Participate?</h2>
-        <div className="p-8 mt-4  ">
+      <section className="p-1  justify-center">
+        <h2 className="text-6xl ml-8 font-bold hollow-text flex justify-center">How To Participate?</h2>
+        <div className="p-8 mt-4 flex max-w-8xl justify-evenly">
           <Form />
         </div>
       </section>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-
 function OurProjects() {
   const services = [
     {
@@ -125,7 +124,7 @@ function OurProjects() {
   }, []);
 
   return (
-    <div className="bg-black text-center mt-10 mb-10">
+    <div className="bg-black text-center mt-10 mb-10 relative">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
           <p className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
@@ -137,17 +136,17 @@ function OurProjects() {
           className="w-full lg:w-[calc(100%-5rem)] overflow-hidden cursor-grab relative"
           ref={scrollRef}
         >
-          <div id="carousel" className="flex space-x-1 p-1 ">
+          <div id="carousel" className="flex space-x-1 p-1">
             {services.map((service, index) => (
-              <div key={index} className="flex-none w-80 h-[26rem]">
-                <div className=" w-full h-full p-2 pb-8 bg-graycard grayscale hover:grayscale-0 dark:bg-neutral-00 mx-auto transition-all duration-300 hover:bg-neutral-800 flex flex-col justify-between">
-                  <div className="flex-grow flex justify-evenly space ">
+              <div key={index} className="flex-none w-80 h-[26rem] relative group">
+                <div className="w-full h-full p-2 pb-8 bg-graycard grayscale hover:grayscale-0 dark:bg-neutral-00 mx-auto transition-all duration-300 hover:bg-neutral-800 flex flex-col justify-between relative">
+                  <div className="flex-grow flex justify-evenly space">
                     <Image
                       src={service.image}
                       alt={service.title}
                       height="400"
                       width="400"
-                      className="object-contain   transition-all duration-300"
+                      className="object-contain transition-all duration-300"
                     />
                   </div>
                   <div className="text-center mt-2">
@@ -161,16 +160,17 @@ function OurProjects() {
                 </div>
               </div>
             ))}
- 
           </div>
         </div>
-        <div className="relative right-28  transform -translate-y-1/2  ">
-            <div className=" border-8 border-white rounded-full p-10 lg:mr-2 sm:mr-4">
-                <Link href="/ourworks"> 
-                <MdOutlineArrowOutward className="lg:h-8 lg:w-8 sm:h-4 sm:w-4 text-white" /> </Link>
-            </div>
+        <div className="z-20 sm:mt-16 lg:relative lg:right-28 lg:transform lg:-translate-y-1/2">
+          <div className="border-8 border-white rounded-full p-10 lg:mr-2 sm:mr-4">
+            <Link href="/ourworks">
+              <MdOutlineArrowOutward className="lg:h-8 lg:w-8 sm:h-4 sm:w-4 text-white" />
+            </Link>
+          </div>
         </div>
-      </div>      
+      </div>
+      <div className="z-10 absolute top-0 lg:right-32 h-full w-32 lg:bg-gradient-to-l from-black pointer-events-none"></div>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const BenefitsBanner = () => {
 
   return (
     <div className="bg-black text-white flex flex-col">
-      <div className="grid lg:grid-cols-4 space-x-2 items-center justify-center">
+      <div className="grid lg:grid-cols-4 space-x-1 items-center justify-center">
         {benefits.map((benefit) => (
           <button
             key={benefit.name}
@@ -19,7 +19,7 @@ const BenefitsBanner = () => {
         ))}
       </div>
       <div className="mt-4">
-        <div className="relative w-full h-80 bg-GreenNew-100">
+        <div className="relative w-full h-80 bg-black">
           <Image
             src={selectedBenefit.image}
             alt={selectedBenefit.name}
@@ -27,7 +27,7 @@ const BenefitsBanner = () => {
             objectFit="cover"
             className="rounded-md"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-GreenNew-100 bg-opacity-25">
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25">
             <h1 className="text-4xl">{selectedBenefit.name}</h1>
           </div>
         </div>

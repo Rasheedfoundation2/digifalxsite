@@ -16,7 +16,7 @@ const slides = [
     mainImage: { src: '/assets/images/img1.jpg', alt: 'Main Image' },
     name: 'Salman',
     role: 'Web Designer',
-    rating: 4.5,
+    rating: 4,
   },
   {
     title: 'Fast Services',
@@ -24,7 +24,7 @@ const slides = [
     mainImage: { src: '/assets/images/img3.jpg', alt: 'Main Image' },
     name: 'Mahesh patil',
     role: 'Marketing Manager',
-    rating: 5,
+    rating: 4.5,
   },
   // Add more slide objects as needed
 ];
@@ -42,11 +42,11 @@ const TestimonialSlide = () => {
 
          {/* right Column with Random Image - place this first in mobile view */}
          <div className="flex justify-center items-center order-1 lg:order-2">
-          <div className="relative lg:top-4 lg:left-28 bg-black bg-opacity-80 text-white p-2 rounded-md">
+          {/* <div className="relative lg:top-4 lg:left-28 bg-black bg-opacity-80 text-white p-2 rounded-md">
             <div>
               <CounterCircle endCount={5} text="Satisfied Clients" duration={3000} character="+" />
             </div>
-          </div>
+          </div> */}
           <img
             src="assets/images/initial_card_image.png"
             alt="Random Image"

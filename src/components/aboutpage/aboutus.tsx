@@ -21,10 +21,10 @@ const testimonialItems = teamMembers.map((member) => ({
 
 export default function About(){
     return (
-    <div>
+    <div className="mt-10">
       <div className="lg:flex">
-      <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
-        <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
+      <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0 text-center">
+        <h2 className="sm:pt-12 hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
               About Us
         </h2>
       </div>
@@ -53,7 +53,7 @@ export default function About(){
 
       {/* Testimonials section */}
       <div className="lg:flex  my-10 ">
-       <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
+       <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0 text-center">
          <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
               Testimonials
          </h2> 

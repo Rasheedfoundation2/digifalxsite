@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import Whatsapp from "@/components/whatsapp";
-
+import ScrollToTopButton from "@/components/scrollToTop";
 
 
 const Fira = Fira_Sans({ weight: ["700"],subsets: ["latin"] });
@@ -19,13 +19,15 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body className={Fira.className}>
+      <link rel="icon" href="/assets/images/white.svg" sizes="any" />
          <Navbar/> 
          <section>
           {children}
           <Whatsapp/>
+          <ScrollToTopButton/>
          </section>
         
-
+          
          <Footer/>
         
       

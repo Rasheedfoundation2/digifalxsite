@@ -89,7 +89,7 @@ const Services: React.FC = () => {
         />
       </div>
       <div className="relative z-10 flex flex-col md:flex-row h-full bg-gradient-to-r from-black from-10% via-black via-30% to-transparent text-white">
-        <div className="flex items-center justify-center w-full md:w-32 lg:w-44 flex-shrink-0 mb-10 md:mb-0">
+        <div className="flex items-center justify-center w-full md:w-32 lg:w-44 flex-shrink-0 mb-10 md:mb-0 ">
           <h2 className="hollow-text text-7xl md:text-6xl lg:text-8xl font-extrabold md:-rotate-90 whitespace-nowrap leading-none">
             Services
           </h2>
