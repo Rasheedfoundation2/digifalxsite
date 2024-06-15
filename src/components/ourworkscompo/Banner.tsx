@@ -8,7 +8,7 @@ const Banner = () => {
         <div
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('/assets/images/img1.jpg')",
+            backgroundImage: "url('/assets/images/img4.jpg')",
           }}
         ></div>
         <div className=" shadow-[inset_1px_4px_30px_29px_#412D86F4]  shadow-black  opacity-70  absolute top-0 left-0 w-full h-full"></div>

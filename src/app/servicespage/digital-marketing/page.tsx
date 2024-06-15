@@ -5,7 +5,7 @@ import ServiceCard from '@/components/servicespage/ServiceCard';
 const services = [
   {
     title: 'SEO',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital Marketing/SEO.webp',
     features: [
       'Keyword Research',
       'On-Page Optimization',
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: 'PPC',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital Marketing/PPC.webp',
     features: [
       'Campaign Management',
       'Keyword Selection',
@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: 'Influencer',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital Marketing/Influencer.webp',
     features: [
       'Influencer Outreach',
       'Content Collaboration',
@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: 'SMM',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital Marketing/SMM.webp',
     features: [
       'Social Media Strategy',
       'Content Creation',
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: 'Email',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital Marketing/Email.webp',
     features: [
       'Email Campaign Strategy',
       'List Management',

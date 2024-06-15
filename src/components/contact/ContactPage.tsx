@@ -30,7 +30,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="lg:flex justify-between bg-black">
+    <div className="lg:flex justify-between bg-BlackNew2">
       <div className="lg:flex items-center justify-center lg:w-44 lg:flex-shrink-0">
         <h2 className="hollow-text text-7xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
           Contact US
@@ -44,7 +44,7 @@ const ContactPage = () => {
               <div className="mb-4">
                 <label className="block text-graysubheading mb-1" htmlFor="fullName">Full Name</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 text-graysubheading rounded bg-black"
+                  className="w-full px-3 py-2 mt-1 text-graysubheading rounded bg-BlackNew2"
                   type="text"
                   name="fullName"
                   id="fullName"
@@ -56,7 +56,7 @@ const ContactPage = () => {
               <div className="mb-4">
                 <label className="block text-graysubheading mb-1" htmlFor="email">Email Address</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 text-graysubheading roundedtext-graysubheading bg-black"
+                  className="w-full px-3 py-2 mt-1 text-graysubheading roundedtext-graysubheading bg-BlackNew2"
                   type="email"
                   name="email"
                   id="email"
@@ -68,7 +68,7 @@ const ContactPage = () => {
               <div className="mb-4">
                 <label className="block text-graysubheading mb-1" htmlFor="subject">Subject</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 rounded text-graysubheading bg-black"
+                  className="w-full px-3 py-2 mt-1 rounded text-graysubheading bg-BlackNew2"
                   type="text"
                   name="subject"
                   id="subject"
@@ -80,7 +80,7 @@ const ContactPage = () => {
               <div className="mb-6">
                 <label className="block text-graysubheading mb-1" htmlFor="message">Message</label>
                 <textarea
-                  className="w-full px-3 py-2 mt-1  text-graysubheading bg-black rounded"
+                  className="w-full px-3 py-2 mt-1  text-graysubheading bg-BlackNew2 rounded"
                   name="message"
                   id="message"
                   rows={4}
@@ -97,7 +97,7 @@ const ContactPage = () => {
             </form>
           </div>
 
-          <div className="lg:order-1 order-2 space-y-4 justify-center">
+          <div className="lg:order-1 order-2 space-y-4 justify-center grayscale hover:grayscale-0 ">
             <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.1511551192074!2d55.27078231500472!3d25.20484938388839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434df0000001%3A0x2f3b78d639d8d21f!2sDubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1626104473328!5m2!1sen!2sin"

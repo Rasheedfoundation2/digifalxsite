@@ -12,9 +12,6 @@ const testimonialItems = teamMembers.map((member) => ({
   title: member.title,
   image:`${member.image}`,
   linkedin:`${member.linkedin}`,
-  facebook:`${member.facebook}`,
-  twitter:`${member.twitter}`,
-  instagram:`${member.instagram}`
 }));
 
 

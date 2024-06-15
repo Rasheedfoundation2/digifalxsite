@@ -2,7 +2,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Bs1Circle, Bs2Circle, Bs3Circle, Bs4Circle, Bs5Circle, BsArrowUpRight, BsArrowRight, BsArrowUpRightCircleFill } from 'react-icons/bs';
+import { Bs1Circle, Bs2Circle, Bs3Circle, Bs4Circle, Bs5Circle, BsArrowUpRightCircleFill } from 'react-icons/bs';
+
+import { GoArrowUpRight,GoArrowRight } from "react-icons/go"
 
 // Define the type for a service
 type Service = {
@@ -30,7 +32,7 @@ type ServiceItemProps = {
 
 const ServiceItem: React.FC<ServiceItemProps> = ({ service, index, onMouseEnter, onMouseLeave, isHovered }) => {
   const Icon = icons[index];
-  const HoverIcon = isHovered ? BsArrowRight : BsArrowUpRight;
+  const HoverIcon = isHovered ? GoArrowRight : GoArrowUpRight;
 
   return (
     <div
@@ -83,8 +85,8 @@ const Services: React.FC = () => {
         <Image
           src={background}
           alt="Background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="transition-opacity duration-500 ease-in-out"
         />
       </div>

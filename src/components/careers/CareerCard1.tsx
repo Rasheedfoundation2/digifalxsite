@@ -34,14 +34,14 @@ const CareerCard: React.FC<CareerCardProps> = ({ image,title, description, respo
         <div className="flex justify-center mt-4">
           <button
             onClick={toggleModal}
-            className="px-6 py-2 bg-black text-neutral-100  outline outline-offset-2 outline-GreenNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-black transition-colors">
+            className="px-6 py-2 bg-BlackNew2 text-neutral-100  outline outline-offset-2 outline-BlueNew hover:bg-graysubheading hover:text-black hover:outline hover:outline-BlueNew transition-colors">
           View Details
           </button>
         </div>
       </div>
 
       {modalOpen && (
-        <div className="fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-75">
+        <div className="fixed inset-0 flex justify-center items-center z-50 bg-BlackNew2 bg-opacity-75">
           <div className="bg-graycard p-6 sm:p-8 rounded-lg max-w-full sm:max-w-lg max-h-full overflow-y-auto mx-4 sm:mx-0 relative">
             <button onClick={toggleModal} className="absolute top-2 right-2 text-white focus:outline-none">
               <AiOutlineClose size={24} />
@@ -63,7 +63,7 @@ const CareerCard: React.FC<CareerCardProps> = ({ image,title, description, respo
                 <div className="flex justify-center">
                   <button
                     onClick={showForm}
-                    className="px-6 py-2 bg-BlueNew-100 text-white bg-black hover:bg-black hover:text-white transition-colors"
+                    className="px-6 py-2 bg-graysubheading text-white hover:bg-white hover:text-black transition-colors"
                   >
                     Apply
                   </button>
@@ -74,30 +74,30 @@ const CareerCard: React.FC<CareerCardProps> = ({ image,title, description, respo
                 <button onClick={() => setFormVisible(false)} className="absolute top-2 right-2 text-white focus:outline-none">
                   <AiOutlineClose size={24} />
                 </button>
-                <h2 className="text-2xl font-semibold text-graysubheading mb-4">Apply for {title}</h2>
+                <h2 className="text-2xl font-semibold text-whiteheading mb-4">Apply for {title}</h2>
                 <form className="space-y-4">
                   <div>
                     <label className="block text-graysubheading ">Name</label>
-                    <input type="text" className="w-full px-3 py-2  rounded-md bg-black text-graysubheading" />
+                    <input type="text" className="w-full px-3 py-2   bg-BlackNew2 text-graysubheading" />
                   </div>
                   <div>
                     <label className="block text-graysubheading">Contact</label>
-                    <input type="text" className="w-full px-3 py-2 rounded-md bg-black text-graysubheading" />
+                    <input type="text" className="w-full px-3 py-2  bg-BlackNew2 text-graysubheading" />
                   </div>
                   <div>
                     <label className="block text-graysubheading">Email</label>
-                    <input type="email" className="w-full px-3 py-2  rounded-md bg-black text-graysubheading" />
+                    <input type="email" className="w-full px-3 py-2   bg-BlackNew2 text-graysubheading" />
                   </div>
                   <div>
                     <label className="block text-graysubheading">Date</label>
-                    <input type="date" className="w-full px-3 py-2  rounded-md bg-black text-graysubheading" />
+                    <input type="date" className="w-full px-3 py-2  bg-BlackNew2 text-graysubheading" />
                   </div>
                   <div>
                     <label className="block text-graysubheading">Resume</label>
-                    <input type="file" className="w-full px-3 py-2   rounded-md bg-black text-graysubheading" />
+                    <input type="file" className="w-full px-3 py-2    bg-BlackNew2 text-graysubheading" />
                   </div>
                   <div className="flex justify-center">
-                    <button type="submit" className="px-6 py-2 bg-BlueNew-100 text-white  hover:bg-black hover:text-white transition-colors">
+                    <button type="submit" className="px-6 py-2 bg-graysubheading text-white  hover:bg-white hover:text-black transition-colors">
                       Submit
                     </button>
                   </div>

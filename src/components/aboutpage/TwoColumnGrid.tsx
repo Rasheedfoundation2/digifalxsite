@@ -9,7 +9,7 @@ const TwoColumnGrid: React.FC = () => {
         {/* Left Column with Random Image */}
         <div className="flex justify-center items-center">
           <img 
-            src="assets/images/initial_card_image.png" 
+            src="assets/images/placeholder_images/service2.webp" 
             alt="Random Image" 
             className="rounded-lg"
           />

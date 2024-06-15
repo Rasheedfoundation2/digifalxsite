@@ -5,7 +5,7 @@ import ServiceCard from '@/components/servicespage/ServiceCard';
 const services = [
   {
     title: 'WooCommerce',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/E-commerce/Woo.webp',
     features: [
       'Easy setup and installation',
       'Flexible customization options',
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: 'Shopify',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/E-commerce/Shopify.webp',
     features: [
       'User-friendly interface',
       'Secure hosting and payments',
@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: 'Magento',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/E-commerce/Magento.webp',
     features: [
       'Highly customizable platform',
       'Scalable for growing businesses',

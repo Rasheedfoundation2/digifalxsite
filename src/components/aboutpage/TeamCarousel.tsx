@@ -39,11 +39,9 @@ const TeamCarousel: React.FC = () => {
           <div className="bg-graycard rounded-lg shadow-md overflow-hidden m-12 transform hover:scale-105 hover:shadow-xl duration-300  ">
             <img src={member.image} alt={member.name} className="w-full h-80  object-fit rounded-lg mb-4 justify-center" />
             <div className="p-4">
-              <h3 className="text-xl text-center text-graysubheading font-bold mb-1">{member.name}</h3>
+              <h3 className="text-xl text-center text-whiteheading font-bold mb-1">{member.name}</h3>
               <p className="text-graysubheading mb-4 text-center">{member.title}</p>
               <div className="mt-2 flex space-x-2 justify-center">
-                {member.facebook && <a href={member.facebook} className="text-blue-600"><FaFacebook/></a>}
-                {member.twitter && <a href={member.twitter} className="text-blue-400"><BsTwitterX/></a>}
                 {member.linkedin && <a href={member.linkedin} className="text-blue-700"><FaLinkedin/></a>}
               </div>
             </div>

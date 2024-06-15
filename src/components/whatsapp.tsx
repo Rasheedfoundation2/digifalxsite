@@ -11,7 +11,7 @@ export default function Whatsapp() {
           phoneNumber="+971547368162" // replace with your WhatsApp phone number 
           statusMessage="Your Digital Partner" // replace with your message
           darkMode= {true}
-          avatar='/assets/images/img1.jpg'
+          avatar='/assets/images/whatsapp.png'
         />
       </div>
     );

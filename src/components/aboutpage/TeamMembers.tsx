@@ -14,81 +14,61 @@ export const teamMembers = [
       id: 1,
       name: "Rasheed Shaikh",
       title: "DIRECTOR",
-      image: 'assets/images/rasheed.png',
+      image: '/assets/images/Team/Rasheed_Shaikh.webp',
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
     },
     {
       id: 2,
-      name: "Balkeesh Shaikh",
+      name: "Bilkees Shaikh",
       title: "DIRECTOR",
-      image: "assets/images/founder2.jpeg",
+      image: "/assets/images/Team/Bilkees_Shaikh.webp",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
     },
     {
       id: 3,
       name: "Ankush Kanojia",
       title: "CLIENT OPERATIONS HEAD",
-      image: "assets/images/ankush.png",
+      image: "/assets/images/Team/Ankush_Kanojia.webp",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
+  
     },
     {
       id: 4,
       name: "Yash Khatri",
       title: "BUSINESS DEVELOPMENT EXECUTIVE",
-      image: "assets/images/yash.png",
+      image: "/assets/images/Team/yash.png",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
+      
     },
     {
       id: 5,
       name: "Nirmiti Sahare",
       title: "SALES & BUSINESS DEVELOPMENT",
-      image: "assets/images/Nirmity.png",
+      image: "/assets/images/Team/Nirmiti_Sahare.webp",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
+  
     },
     {
       id: 6,
       name: "Shivan Sahani",
       title: "CREATIVE HEAD",
-      image: "assets/images/Shivan.png",
+      image: "/assets/images/Team/Shivan_sahani.webp",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
+      
     },
     {
       id: 7,
       name: "Nikhilesh",
       title: "GRAPHIC DESIGNER",
-      image: "assets/images/Nikhilesh.png",
+      image: "/assets/images/Team/Nikhilesh.webp",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
     },
     {
       id: 8,
       name: "Umair Shaikh",
       title: "PHOTOGRAPHER & VIDEOGRAPHER",
-      image: "assets/images/umair.png",
+      image: "/assets/images/Team/Umair_Shaikh.webp",
       linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      instagram: "#"
     }
   ];
   

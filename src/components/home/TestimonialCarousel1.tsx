@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import { FaArrowLeft,FaArrowRight  } from "react-icons/fa6";
+import { RiArrowRightWideFill,RiArrowLeftWideFill } from "react-icons/ri";
 
 type ImageType = {
   src: string;
@@ -49,9 +51,9 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
     <div className="relative max-w-xl mx-auto text-whiteheading h-[80%]">
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-BlueNew p-3 rounded-full"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-graysubheading p-2 h-20 mr-2"
       >
-        &lt;
+        <RiArrowLeftWideFill />
       </button>
       <div className="text-center p-10 h-[80%]">
         <div className="">
@@ -87,9 +89,9 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
       </div>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-BlueNew p-3 rounded-full"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-graysubheading p-2 h-20 ml-2"
       >
-        &gt;
+        <RiArrowRightWideFill />
       </button>
     </div>
   );

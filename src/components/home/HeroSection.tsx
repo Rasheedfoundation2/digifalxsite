@@ -11,11 +11,6 @@ function HeroSection() {
     <div className='h-auto md:h-[42rem] text-white w-full rounded-md flex 
     flex-col md:flex-row items-center justify-between relative overflow-hidden 
     mx-auto md:py-0 bg-black'>
-      
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="grey"
-      />
       <div className='p-4 relative z-2 w-full md:w-1/2 text-left md:ml-20'>
       <div
           className="absolute inset-x-0 -top-40 z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"

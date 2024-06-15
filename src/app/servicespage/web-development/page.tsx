@@ -5,7 +5,7 @@ import ServiceCard from '@/components/servicespage/ServiceCard';
 const services = [
   {
     title: 'Wordpress Development',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/Wordpress.webp',
     features: [
       'Custom Theme Development',
       'Plugin Development',
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: 'PHP Development',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/PHP.webp',
     features: [
       'Custom Web Application Development',
       'Backend Development',
@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: 'Website Maintenance Services',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/WebMaintenance.webp',
     features: [
       'Regular Backup Services',
       'Security Audits',
@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: 'Laravel Development',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/Laravel.webp',
     features: [
       'RESTful API Development',
       'Authentication and Authorization',
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: 'React',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/React.webp',
     features: [
       'Component-Based Architecture',
       'Virtual DOM',
@@ -60,7 +60,7 @@ const services = [
   },
   {
     title: 'Angular',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/Angular.webp',
     features: [
       'Modular Development',
       'Two-Way Data Binding',
@@ -71,7 +71,7 @@ const services = [
   },
   {
     title: 'MERN & MEAN',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Web Development/MEAN&MERN.webp',
     features: [
       'MongoDB',
       'Express.js',

@@ -7,7 +7,7 @@ export interface Career {
 
 export const careerData: Career[] = [
     {
-      image: '/assets/images/web.png',
+      image: '/assets/images/joinus/joinus2.svg',
       title: 'Web Development',
       description: 'Embark on a journey of innovation and excellence in web development with our dynamic team.',
       responsibilities: [
@@ -24,7 +24,7 @@ export const careerData: Career[] = [
       ]
     },
     {
-      image: '/assets/images/Product.png',
+      image: '/assets/images/joinus/joinus1.svg',
       title: 'Product Development',
       description: 'Craft the future of design with our team. Join us as a graphic designer.',
       responsibilities: [
@@ -41,7 +41,7 @@ export const careerData: Career[] = [
       ]
     },
     {
-      image: '/assets/images/retailMarketing.jpg',
+      image: '/assets/images/joinus/joinus3.svg',
       title: 'Retail Marketing',
       description: 'Shape retail\'s future with us. Join our marketing team now!',
       responsibilities: [
@@ -58,7 +58,7 @@ export const careerData: Career[] = [
       ]
     },
     {
-      image: '/assets/images/BussinessManagement.png',
+      image: '/assets/images/joinus/joinus4.svg',
       title: 'Business Management',
       description: 'Lead innovation and drive success. Join our team and shape the future of business management.',
       responsibilities: [
@@ -75,7 +75,7 @@ export const careerData: Career[] = [
       ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus5.svg',
       title: 'Digital Marketing',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
       responsibilities: [
@@ -92,7 +92,7 @@ export const careerData: Career[] = [
       ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus6.svg',
       title: 'Business Analyst',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
       responsibilities: [
@@ -109,40 +109,106 @@ export const careerData: Career[] = [
       ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus7.svg',
       title: 'Data Analyst',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
-      responsibilities:["dfsdsf"]
+      responsibilities:[
+        'Collect, process, and analyze large datasets to identify trends and insights.',
+        'Develop and maintain databases and data systems for efficient data management.',
+        'Create data visualizations and reports to communicate findings to stakeholders.',
+        'Collaborate with different departments to understand their data needs and deliver actionable insights.',
+        'Conduct data quality assessments and implement data cleansing procedures.',
+        'Use statistical techniques and software to perform data analysis and predictive modeling.',
+        'Monitor and evaluate the performance of data-driven projects.',
+        'Ensure data security and compliance with relevant regulations.',
+        'Identify opportunities for process improvements based on data analysis.',
+        'Provide training and support to staff on data tools and methodologies.',
+      ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus8.svg',
       title: 'Videographer',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
-      responsibilities:["dfsdsf"]
+      responsibilities:[
+        'Plan, shoot, and edit video content for various platforms.',
+        'Collaborate with clients and team members to understand video requirements.',
+        'Set up and operate cameras, lighting, and audio equipment.',
+        'Edit raw footage into polished, engaging videos.',
+        'Incorporate graphics, animations, and special effects as needed.',
+        'Ensure videos align with brand guidelines and project goals.',
+        'Manage video production schedules and deadlines.',
+        'Maintain and organize video equipment and files.',
+        'Stay updated on video production trends and techniques.',
+        'Provide creative input and ideas for video content.'
+      ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus1.svg',
       title: 'Graphic Designer',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
-      responsibilities:["dfsdsf"]
+      responsibilities:[
+        'Create visually appealing graphics for print and digital media.',
+        'Develop design concepts, graphics, and layouts for various projects.',
+        'Collaborate with clients and team members to understand design requirements.',
+        'Use design software to produce high-quality graphics and illustrations.',
+        'Prepare design drafts and present ideas to stakeholders.',
+        'Ensure all designs align with brand guidelines and project goals.',
+        'Revise designs based on feedback and direction.',
+        'Manage multiple design projects and meet deadlines.',
+        'Stay updated on design trends and best practices.',
+        'Maintain a portfolio of design work.'
+      ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus1.svg',
       title: 'Content Writer',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
-      responsibilities:["dfsdsf"]
+      responsibilities:[
+        'Research and write high-quality content for various platforms.',
+        'Develop content strategies and plans to meet business goals.',
+        'Collaborate with marketing and design teams to create engaging content.',
+        'Edit and proofread content for accuracy and clarity.',
+        'Optimize content for SEO and digital marketing.',
+        'Stay updated on industry trends and incorporate them into content.',
+        'Manage content calendars and meet deadlines.',
+        'Conduct interviews and gather information for content creation.',
+        'Use content management systems to publish content.',
+        'Monitor and analyze content performance.'
+      ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
+      image: '/assets/images/joinus/joinus1.svg',
       title: 'Social Media Manager',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
-      responsibilities:["dfsdsf"]
+      responsibilities:[
+        'Develop and implement social media strategies to increase brand awareness.',
+        'Create and curate engaging content for social media platforms.',
+        'Monitor social media channels and respond to comments and messages.',
+        'Analyze social media metrics and adjust strategies accordingly.',
+        'Collaborate with marketing and design teams to create cohesive campaigns.',
+        'Stay updated on social media trends and best practices.',
+        'Manage social media advertising campaigns.',
+        'Build and maintain relationships with influencers and partners.',
+        'Provide regular reports on social media performance to stakeholders.',
+        'Conduct social media audits and competitive analysis.'
+      ]
     },
     {
-      image: '/assets/images/DigitalMarketing.png',
-      title: 'Tester',
+      image: '/assets/images/joinus/joinus3.svg',
+      title: 'software Tester',
       description: 'Join our team and unleash your creativity as we revolutionize the market together.',
-      responsibilities:["dfsdsf"]
+      responsibilities:[
+        'Develop and execute test plans and test cases.',
+        'Identify, document, and track software defects.',
+        'Collaborate with developers to resolve issues.',
+        'Perform functional, regression, and performance testing.',
+        'Ensure software meets quality standards and requirements.',
+        'Create and maintain automated test scripts.',
+        'Conduct security testing to identify vulnerabilities.',
+        'Provide test progress and results reports to stakeholders.',
+        'Participate in design and code reviews.',
+        'Stay updated on testing tools and best practices.'
+      ]
     }
   ];
   

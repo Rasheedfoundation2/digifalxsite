@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, image, features }) => 
     <div className="px-6 py-4">
       <div className="font-bold text-white text-2xl  text-center mb-2">{title}</div>
      
-        <img className="h-3/4 w-full pb-4" src={image} alt={title} />
+        <img className="h-3/4 min-h-[350px] w-full pb-4" src={image} alt={title} />
     </div>
     {isHovered && (
         

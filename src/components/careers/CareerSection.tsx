@@ -9,8 +9,8 @@ const CareerSection: React.FC = () => {
    <>
     <div className="min-h-screen bg-black flex flex-col items-center py-12">
       <div className="text-center px-4">
-        <h1 className="hollow-text text-8xl font-bold">Join Us  </h1>
-        <p className="mt-4 text-whiteheading max-w-3xl mx-auto">
+        <h1 className="hollow-text text-8xl font-bold text-white">Join Us  </h1>
+        <p className="mt-4 text-graysubheading max-w-3xl mx-auto">
           Our vision at DigiFalx is to establish a strong digital presence in Navi Mumbai and Dubai, offering expert Web Design and Digital Marketing services to enhance businesses’ brand identities. Transitioning smoothly, moreover, we prioritize client satisfaction.
         </p>
       </div>

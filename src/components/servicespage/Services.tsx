@@ -50,7 +50,7 @@ function OurServices() {
                   <Image
                     src={service.image}
                     alt={service.title}
-                    height={100}
+                    height={300}
                     width={300}
                     className="object-contain w-full"
                   />

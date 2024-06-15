@@ -15,10 +15,10 @@ const Digichamps: React.FC = () => {
     <div className="bg-black text-white">
        <h1 className="text-6xl text-inherit m-2  py-8 lg:text-8xl flex justify-start item-center font-bold hollow-text ">DIGICHAMPS</h1>
       {/* hero and About Section */}
-      <div className=' '>
+      <div>
       <div className="relative w-[90%] h-[1/4] m-auto  bg-black bg-opacity-50">
         <img
-          src="/assets/images/digichamps.png"
+          src="/assets/images/digichamps/digichamps.png"
           alt="Digicamps banner"
           className="object-cover w-full m-auto"
         />
@@ -32,10 +32,10 @@ const Digichamps: React.FC = () => {
           {/* Left Column with Random Image */}
           <div className="flex justify-center items-center">
             <img 
-              src="/assets/images/initial_card_image.png" 
-              alt="Random Image" 
+              src="/assets/images/digichamps/about_digichamps.png" 
+              alt="about digichmaps" 
               width={400}
-              height={500}
+              height={400}
               className="rounded-lg"
             />
           </div>
@@ -57,7 +57,7 @@ const Digichamps: React.FC = () => {
           {['Professionals', 'Startups', 'Innovators', 'Freelancers'].map((role) => (
             <div key={role} className="flex flex-col items-center justify-center">
               <div className="w-52 h-52 bg-neutral-100 rounded-full flex items-center justify-center">
-                <img src={`/assets/images/${role.toLowerCase()}-icon.png`} alt={role} className="text-black w-12 h-12"/>
+                <img src={`/assets/images/digichamps/${role.toLowerCase()}.svg`} alt={role} className="text-black w-24 h-24"/>
               </div>
               <p className="mt-4 font-bold text-graysubheading text-2xl">{role}</p>
             </div>

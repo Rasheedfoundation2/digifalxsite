@@ -5,7 +5,7 @@ import ServiceCard from '@/components/servicespage/ServiceCard';
 const services = [
   {
     title: 'Company Profile Development',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital_Branding/companyprofile.webp',
     features: [
       'Customized company profile design',
       'Effective communication strategy',
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: 'Logo design & Branding',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital_Branding/LogoDesign.webp',
     features: [
       'Unique logo design',
       'Brand identity development',
@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: 'Business Card Design',
-    image:'/assets/images/initial_card_image.png',
+    image:'/assets/images/Digital_Branding/BusinessCard.webp',
     features: [
       'Creative business card design',
       'Brand integration',
@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: 'Corporate Identity Design',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital_Branding/CorporateIdentity.webp',
     features: [
       'Corporate visual identity development',
       'Brand image enhancement',
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: 'Packaging Design',
-    image: '/assets/images/initial_card_image.png',
+    image: '/assets/images/Digital_Branding/PackagingDesign.webp',
     features: [
       'Product packaging conceptualization',
       'Packaging material selection',

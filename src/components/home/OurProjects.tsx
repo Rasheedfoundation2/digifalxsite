@@ -162,7 +162,7 @@ function OurProjects() {
             ))}
           </div>
         </div>
-        <div className="z-20 sm:mt-16 lg:relative lg:right-28 lg:transform lg:-translate-y-1/2">
+        <div className="z-20 sm:mt-16 lg:relative lg:right-20 lg:transform lg:-translate-y-1/2">
           <div className="border-8 border-white rounded-full p-10 lg:mr-2 sm:mr-4">
             <Link href="/ourworks">
               <MdOutlineArrowOutward className="lg:h-8 lg:w-8 sm:h-4 sm:w-4 text-white" />

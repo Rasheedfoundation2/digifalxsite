@@ -30,7 +30,13 @@ const config: Config = {
         },
         graysubheading:{
           DEFAULT: '#A1A1A1'
-        }
+        },
+        BlackNew:{
+          DEFAULT: '#09090a'
+        },
+        BlackNew2:{
+          DEFAULT: '#0C0C0f'
+        },
       },
       textColor: {
         'transparent': 'transparent',

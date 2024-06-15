@@ -35,27 +35,22 @@ const navItems: NavItem[] = [
       {
         label: "Digital Branding & Communication",
         link: "/servicespage/digitalbranding",
-        iconImage: "/assets/images/digital-marketing.svg"
       },
       {
         label: "UI/UX Services",
         link: "/servicespage/ui-ux",
-        iconImage: "/assets/images/digital-marketing.svg"
       },
       {
         label: "Web Development",
         link: "/servicespage/web-development",
-        iconImage: "/assets/images/digital-marketing.svg"
       },
       {
         label: "E-commerce",
         link: "/servicespage/e-commerce",
-        iconImage: "/assets/images/digital-marketing.svg"
       },
       {
         label: "Digital Marketing",
         link: "/servicespage/digital-marketing",
-        iconImage: "/assets/images/digital-marketing.svg"
       },
     ]
   },
@@ -75,7 +70,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "BLOG",
-    link: "https://digifalx.com",
+    link: "https://digifalx.com/blog/",
   },
 ];
 
@@ -132,7 +127,7 @@ export default function Navbar() {
               </Link>
               {d.children && (
                 <div
-                  className={`absolute right-0 top-12 w-auto px-4 flex-col gap-1 rounded bg-neutral-100 py-3 shadow-md transition-all z-30 ${
+                  className={`absolute right-0 top-12 w-auto flex-col gap-1  bg-neutral-100 py-3 shadow-md transition-all z-30 ${
                     dropdownVisible && hoveredIndex === i ? 'flex' : 'hidden'
                   }`}
                   onMouseEnter={() => handleMouseEnter(i)}
@@ -144,9 +139,6 @@ export default function Navbar() {
                       href={ch.link ?? "#"}
                       className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-BlueNew"
                     >
-                      {ch.iconImage && (
-                        <Image src={ch.iconImage} alt="item-icon" width={30} height={30} />
-                      )}
                       <span className="whitespace-nowrap pl-3">
                         {ch.label}
                       </span>
@@ -160,12 +152,27 @@ export default function Navbar() {
       </section>
 
       {/* right side data */}
-      <section className="hidden md:flex items-center gap-8 pr-10">
+      <section className="hidden md:flex items-center gap-8">
         <Link href={"/contactus"}>
-          <button className="px-6 py-2 bg-black text-neutral-100 outline outline-offset-2 outline-BlueNew hover:bg-BlueNew hover:text-white hover:outline hover:outline-white transition-colors">
-            Lets Talk
-          </button>
-        </Link>
+        <button
+          className="overflow-hidden border w-32 p-2 h-12 bg-black text-white  text-xl font-bold cursor-pointer relative z-10 group"
+          > 
+          Lets Talk !
+        <span
+          className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"
+          ></span>
+        <span
+          className="absolute w-36 h-32 -top-8 -left-2 bg-sky-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"
+          ></span>
+        <span
+            className="absolute w-36 h-32 -top-8 -left-2 bg-BlueNew rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"
+        ></span>
+        <span
+          className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+        >Explore!</span >
+      </button>
+      </Link>
+
       </section>
 
       <FiMenu
@@ -203,10 +210,24 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
 
         <section className="flex flex-col gap-8 mt-4 items-center">
           <Link href={"/contactus"}>
-            <button className="px-6 py-2 bg-black text-neutral-100 rounded-full outline outline-offset-2 outline-BlueNew-100 hover:bg-BlueNew-100 hover:text-white hover:outline hover:outline-white transition-colors">
-              Lets Talk
-            </button>
-          </Link>
+        <button
+          className="overflow-hidden border w-32 p-2 h-12 bg-black text-white  text-xl font-bold cursor-pointer relative z-10 group"
+          > 
+          Lets Talk !
+        <span
+          className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"
+          ></span>
+        <span
+          className="absolute w-36 h-32 -top-8 -left-2 bg-sky-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"
+          ></span>
+        <span
+            className="absolute w-36 h-32 -top-8 -left-2 bg-BlueNew rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"
+        ></span>
+        <span
+          className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+        >Explore!</span >
+      </button>
+      </Link>
         </section>
       </div>
     </div>

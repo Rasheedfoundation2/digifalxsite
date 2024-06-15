@@ -1,5 +1,4 @@
-import HeroSection from "../../components/home/HeroSection";
-// import Services from "@/components/home/ServicesSection";
+// import HeroSection from "@/components/home/HeroSection";
 import LogoSection from "@/components/home/companyLogo";
 import TestimonialSlide from "@/components/home/TestimonialSlide";
 import Counter1 from "@/components/aboutpage/CounterNumberSet";
@@ -7,6 +6,7 @@ import OurProjects from "@/components/home/OurProjects";
 import Services from "@/components/home/NewServicesSection";
 import ServiceNameBanner from "@/components/home/ServicecarousalBanner";
 import Popup from "@/components/home/Popup";
+import { AuroraHero } from "@/components/home/HeroSection4";
 
 export default function HomePage() {
     return (
@@ -14,7 +14,8 @@ export default function HomePage() {
           {/* Pop up details collection tab*/}
         <Popup/>
         <section className="mb-12">
-          <HeroSection/>
+          {/* <HeroSection/>  */}
+          <AuroraHero/>
         </section>
         
 

@@ -5,7 +5,7 @@ import ServiceCard from '@/components/servicespage/ServiceCard';
 const services = [
   {
     title: 'PSD To Responsive HTML',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/UIUX/PSD.webp',
     features: [
       'Pixel-perfect conversion',
       'Cross-browser compatibility',
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: 'UX Design',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/UIUX/UX.webp',
     features: [
       'User research',
       'Wireframing and prototyping',
@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: 'Landing Page Design',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/UIUX/LandingPage.webp',
     features: [
       'Attention-grabbing headlines',
       'Clear call-to-action',
@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: 'Responsive Web Design',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/UIUX/ResponsiveWeb.webp',
     features: [
       'Flexible layouts',
       'Media queries',
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: 'Graphic Design',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/UIUX/GraphicDesign.webp',
     features: [
       'Logo design',
       'Branding materials',
@@ -60,7 +60,7 @@ const services = [
   },
   {
     title: 'UX Audit',
-    image:  '/assets/images/initial_card_image.png',
+    image:  '/assets/images/UIUX/UX Audit.webp',
     features: [
       'Usability evaluation',
       'Heuristic evaluation',
