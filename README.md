@@ -20,17 +20,11 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+##file structure
 
-To learn more about Next.js, take a look at the following resources:
+all the pages are inside src/app and the all folder are given the name of the pages since , all the files inside the folder are named as page.tsx for navigation this done because we are using app router 
+so if you want to add a page make a folder with the name and give the path as folder name "/servicespage" it will navigate auto matically 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+for backend the files are inside api folder insode app and to add the handler/helper/validation code make a folder with the name of the page same as above and file name as route.ts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+after running if ur getting hidration error diable all browser extension since they can cause it.
