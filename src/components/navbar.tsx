@@ -37,7 +37,7 @@ const navItems: NavItem[] = [
         link: "/servicespage/digitalbranding",
       },
       {
-        label: "UI/UX Services",
+        label: "UI & UX Design",
         link: "/servicespage/ui-ux",
       },
       {
@@ -45,7 +45,7 @@ const navItems: NavItem[] = [
         link: "/servicespage/web-development",
       },
       {
-        label: "E-commerce",
+        label: "E-Commerce",
         link: "/servicespage/e-commerce",
       },
       {
@@ -55,18 +55,32 @@ const navItems: NavItem[] = [
     ]
   },
   {
-    label: "CAREER",
-    link: "/joinus",
+    label: "CREATIVE",
+    // link: "",
     children: [
       {
-        label: "DIGI-CHAMPS",
-        link: "/digichamps"
+        label: "Gigs",
+        link: "https://gigworks.digifalx.com"
+      },
+      {
+        label: "Creators",
+        link: "https://creators.digifalx.com"
       }
     ]
   },
   {
-    label: "TALENT",
-    link: "https://digifalx.com",
+    label: "CAREER",
+    link: "/joinus",
+    children: [
+      {
+        label: "DigiLearn",
+        link: "https://digilearn.digifalx.com"
+      },
+      {
+        label: "DigiChamps",
+        link: "/digichamps"
+      }
+    ]
   },
   {
     label: "BLOG",

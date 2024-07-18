@@ -31,11 +31,11 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-4 rounded bg-graysubheading text-white shadow-lg hover:bg-BlueNew focus:outline-none"
+          className="p-4 rounded bg-graysubheading text-white shadow-lg hover:bg-BlueNew focus:outline-none scroll-to-top-button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 icon"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -49,6 +49,21 @@ const ScrollToTopButton = () => {
           </svg>
         </button>
       )}
+      <style jsx>{`
+        .scroll-to-top-button .icon {
+          height: 24px;
+          width: 24px;
+        }
+        @media (max-width: 768px) {
+          .scroll-to-top-button {
+            padding: 2px;
+          }
+          .scroll-to-top-button .icon {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      `}</style>
     </div>
   );
 };

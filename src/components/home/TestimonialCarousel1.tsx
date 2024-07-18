@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import { FaArrowLeft,FaArrowRight  } from "react-icons/fa6";
-import { RiArrowRightWideFill,RiArrowLeftWideFill } from "react-icons/ri";
+import { RiArrowRightWideFill, RiArrowLeftWideFill } from "react-icons/ri";
 
 type ImageType = {
   src: string;
@@ -47,6 +47,10 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
 
+  if (!slides.length) {
+    return <p>No testimonials available</p>;
+  }
+
   return (
     <div className="relative max-w-xl mx-auto text-whiteheading h-[80%]">
       <button
@@ -56,36 +60,41 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ slides }) => 
         <RiArrowLeftWideFill />
       </button>
       <div className="text-center p-10 h-[80%]">
-        <div className="">
-          <h2 className="text-3xl font-bold mb-10">{slides[activeSlide].title}</h2>
-          <p className="text-base mb-6 text-graysubheading h-56 overflow-hidden">{slides[activeSlide].text}</p>
-        </div>
-
-        <div className="flex mt-10 border-t-2 border-white p-5">
-          <img
-            src={slides[activeSlide].mainImage.src}
-            alt={slides[activeSlide].mainImage.alt}
-            className="w-24 h-24 rounded-full mb-2 "
-          />
-          <div>
-          <h3 className="text-xl font-semibold px-14 text-left">{slides[activeSlide].name}</h3>
-          <p className="text-sm text-gray-600 px-14 text-left">{slides[activeSlide].role}</p>
-          <div className="flex justify-left px-14 mt-2">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <svg
-                key={i}
-                className={`w-5 h-5 ${
-                  i < slides[activeSlide].rating ? "text-yellow-500" : "text-gray-300"
-                }`}
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.964a1 1 0 00.95.69h4.168c.969 0 1.372 1.24.588 1.81l-3.366 2.451a1 1 0 00-.364 1.118l1.286 3.964c.3.921-.755 1.688-1.54 1.118L10 13.527l-3.366 2.451c-.785.57-1.84-.197-1.54-1.118l1.286-3.964a1 1 0 00-.364-1.118L3.65 9.391c-.784-.57-.38-1.81.588-1.81h4.168a1 1 0 00.95-.69L9.049 2.927z" />
-              </svg>
-            ))}
-          </div>
-         </div> 
-        </div>
+        {slides[activeSlide] && (
+          <>
+            <div>
+              <h2 className="text-3xl font-bold mb-10">{slides[activeSlide].title}</h2>
+              <p className="text-base mb-6 text-graysubheading h-56 overflow-hidden">{slides[activeSlide].text}</p>
+            </div>
+            <div className="flex mt-10 border-t-2 border-white p-5">
+              {slides[activeSlide].mainImage && (
+                <img
+                  src={slides[activeSlide].mainImage.src}
+                  alt={slides[activeSlide].mainImage.alt}
+                  className="w-24 h-24 rounded-full mb-2"
+                />
+              )}
+              <div>
+                <h3 className="text-xl font-semibold px-4 text-left">{slides[activeSlide].name}</h3>
+                <p className="text-sm text-gray-600 px-4 text-left">{slides[activeSlide].role}</p>
+                <div className="flex justify-left px-4 mt-2">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <svg
+                      key={i}
+                      className={`w-5 h-5 ${
+                        i < slides[activeSlide].rating ? "text-yellow-500" : "text-gray-300"
+                      }`}
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.964a1 1 0 00.95.69h4.168c.969 0 1.372 1.24.588 1.81l-3.366 2.451a1 1 0 00-.364 1.118l1.286 3.964c.3.921-.755 1.688-1.54 1.118L10 13.527l-3.366 2.451c-.785.57-1.84-.197-1.54-1.118l1.286-3.964a1 1 0 00-.364-1.118L3.65 9.391c-.784-.57-.38-1.81.588-1.81h4.168a1 1 0 00.95-.69L9.049 2.927z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
       <button
         onClick={nextSlide}

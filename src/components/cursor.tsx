@@ -95,6 +95,14 @@ const CustomCursor: React.FC = () => {
             background-color: white;
             border-radius: 50%;
           }
+          @media (max-width: 768px) {
+            .cursor {
+              display: none;
+            }
+            body {
+              cursor: auto;
+            }
+          }
         `}
       </style>
       <div ref={cursorRef} className="cursor">

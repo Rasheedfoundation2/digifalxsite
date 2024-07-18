@@ -1,4 +1,6 @@
 // import HeroSection from "@/components/home/HeroSection";
+import React from "react";
+// import { Helmet } from "react-helmet";
 import LogoSection from "@/components/home/companyLogo";
 import TestimonialSlide from "@/components/home/TestimonialSlide";
 import Counter1 from "@/components/aboutpage/CounterNumberSet";
@@ -9,45 +11,57 @@ import Popup from "@/components/home/Popup";
 import { AuroraHero } from "@/components/home/HeroSection4";
 
 export default function HomePage() {
-    return (
-      <main className="bg-black">
-          {/* Pop up details collection tab*/}
-        <Popup/>
-        <section className="mb-12">
-          {/* <HeroSection/>  */}
-          <AuroraHero/>
-        </section>
-        
+  return (
+    <main className="bg-black">
+      {/* <Helmet>
+        <script type="text/javascript">
+          {`
+           <!-- Google tag (gtag.js) -->
+           <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C8B6M4FW1"></script>
+           <script>
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+           
+             gtag('config', 'G-0C8B6M4FW1');
+           </script>
+          `}
+        </script>
+      </Helmet> */}
 
-        {/* Services Card*/}
-        <Services/>
+      {/* Pop up details collection tab*/}
+      <Popup />
+      <section className="mb-12">
+        {/* <HeroSection/>  */}
+        <AuroraHero />
+      </section>
 
-         {/*Counting Circle*/}
-        <Counter1/>
+      {/* Services Card*/}
+      <Services />
 
-        {/* Our Works */}
-        <OurProjects/> 
+      {/*Counting Circle*/}
+      <Counter1 />
 
-        {/* Company logo corousal */}
-        <LogoSection/>
+      {/* Our Works */}
+      <OurProjects />
 
-        {/* Testimonial */}
-        <div className="lg:flex  my-10 mt-5 mb-5">
-          <div className="lg:flex items-center justify-center text-center lg:w-44 lg:flex-shrink-0">
-            <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
-              Testimonials
-           </h2> 
-         </div>
+      {/* Company logo corousal */}
+      <LogoSection />
+
+      {/* Testimonial */}
+      <div className="lg:flex  my-10 mt-5 mb-5">
+        <div className="lg:flex items-center justify-center text-center lg:w-44 lg:flex-shrink-0">
+          <h2 className="hollow-text text-6xl text-inherit lg:text-8xl lg:left-40 font-extrabold lg:-rotate-90 whitespace-nowrap leading-none">
+            Testimonials
+          </h2>
+        </div>
         <div className="relative flex lg:mx-36 justify-center items-center">
-          <TestimonialSlide/>
+          <TestimonialSlide />
         </div>
-        </div>
+      </div>
 
-        {/* services Banner */}
-          <ServiceNameBanner/>
-        
-        
+      {/* services Banner */}
+      <ServiceNameBanner />
     </main>
-    );
-  }
-  
+  );
+}
