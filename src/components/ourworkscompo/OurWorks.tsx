@@ -103,7 +103,7 @@ const projects = [
     title: "Infinite Home Health Care",
     category: "Website Development & Social Media",
     image: "/assets/images/Infinite Home Health Care.webp",
-  },
+  }
 ];
 
 const logos = [

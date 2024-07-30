@@ -55,6 +55,10 @@ const navItems: NavItem[] = [
     ]
   },
   {
+    label: "CASE STUDY",
+    link: "/casestudy",
+  },
+  {
     label: "CREATIVE",
     // link: "",
     children: [

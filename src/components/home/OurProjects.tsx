@@ -7,36 +7,85 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 function OurProjects() {
   const services = [
     {
-      title: "Digital Marketing Services",
-      description: "Comprehensive consultancy services covering digital strategy, market analysis, and campaign optimization, ensuring alignment with business objectives and maximizing ROI.",
-      image: "/assets/images/img1.jpg",
+      title: "RB Royal Services",
+      description: "Website Development",
+      image: "/assets/images/Rb Royal Service.webp",
     },
     {
-      title: "UI/ UX Development",
-      description: "Creating a face for the brand with seamless integration ultimately helps build a strong connection with your audience. Moreover, it enhances brand recognition and fosters loyalty.",
-      image: "/assets/images/img2.jpg",
+      title: "Dr.Nagma's DerMed Clinic",
+      description: "Social Media Management",
+      image: "/assets/images/Dr.Nagma's Dermed Clinic.webp",
     },
     {
-      title: "Web Development",
-      description: "Creating a face for the brand with seamless integration ultimately helps build a strong connection with your audience. Moreover, it enhances brand recognition and fosters loyalty.",
-      image: "/assets/images/img3.jpg",
+      title: "Dr.Chandani's Swasthya Clinic",
+      description: "Social Media Management",
+      image: "/assets/images/Dr.Chandani's Swasthya Clinic.webp",
     },
     {
-      title: "Social Branding",
-      description: "Creating a face for the brand with seamless integration ultimately helps build a strong connection with your audience. Moreover, it enhances brand recognition and fosters loyalty.",
-      image: "/assets/images/img4.jpg",
+      title: "Janvika Food Hub",
+      description: "Social Media Management",
+      image: "/assets/images/Janvika Food Hub.webp",
     },
     {
-      title: "Web Design",
-      description: "Creating a face for the brand with seamless integration ultimately helps build a strong connection with your audience. Moreover, it enhances brand recognition and fosters loyalty.",
-      image: "/assets/images/img5.jpg",
+      title: "MCI",
+      description: "Website Development & Social Media",
+      image: "/assets/images/MCI.webp",
     },
     {
-      title: "E-commerce",
-      description: "Creating a face for the brand with seamless integration ultimately helps build a strong connection with your audience. Moreover, it enhances brand recognition and fosters loyalty.",
-      image: "/assets/images/img1.jpg",
+      title: "MFI",
+      description: "Website Development & Social Media",
+      image: "/assets/images/MFI.webp",
     },
-    // Add other services here...
+    {
+      title: "Dhiman Global",
+      description: "Website Development",
+      image: "/assets/images/Dhiman Global.webp",
+    },
+    {
+      title: "Lyuka Med",
+      description: "Website Development & Social Media",
+      image: "/assets/images/lyukamed.webp",
+    },
+    {
+      title: "Mag Food Stuff",
+      description: "Website Development & Social Media",
+      image: "/assets/images/Mag-Food.webp",
+    },
+    {
+      title: "MC Homes",
+      description: "Website Development & Social Media",
+      image: "/assets/images/MC Homes.webp",
+    },
+    {
+      title: "MCHS",
+      description: "Website Development & Social Media",
+      image: "/assets/images/mchs.webp",
+    },
+    {
+      title: "MGMT",
+      description: "Website Development & Social Media",
+      image: "/assets/images/mgmt.webp",
+    },
+    {
+      title: "Paak Al Safa",
+      description: "Website Development & Social Media",
+      image: "/assets/images/Paakalsafa.webp",
+    },
+    {
+      title: "TMRC FB",
+      description: "Website Development & Social Media",
+      image: "/assets/images/TMRC FB.webp",
+    },
+    {
+      title: "Rasheed Foundation",
+      description: "Website Development & Social Media",
+      image: "/assets/images/Rasheed-Foundation.webp",
+    },
+    {
+      title: "Infinite Home Health Care",
+      description: "Website Development & Social Media",
+      image: "/assets/images/Infinite Home Health Care.webp",
+    }
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -138,7 +187,10 @@ function OurProjects() {
         >
           <div id="carousel" className="flex space-x-1 p-1">
             {services.map((service, index) => (
-              <div key={index} className="flex-none w-80 h-[26rem] relative group">
+              <div
+                key={index}
+                className="flex-none w-80 h-[26rem] relative group"
+              >
                 <div className="w-full h-full p-2 pb-8 bg-graycard grayscale hover:grayscale-0 dark:bg-neutral-00 mx-auto transition-all duration-300 hover:bg-neutral-800 flex flex-col justify-between relative">
                   <div className="flex-grow flex justify-evenly space">
                     <Image
