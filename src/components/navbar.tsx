@@ -31,33 +31,33 @@ const navItems: NavItem[] = [
   {
     label: "SERVICES",
     link: "/servicespage",
-    children: [
-      {
-        label: "Digital Branding & Communication",
-        link: "/servicespage/digitalbranding",
-      },
-      {
-        label: "UI & UX Design",
-        link: "/servicespage/ui-ux",
-      },
-      {
-        label: "Web Development",
-        link: "/servicespage/web-development",
-      },
-      {
-        label: "E-Commerce",
-        link: "/servicespage/e-commerce",
-      },
-      {
-        label: "Digital Marketing",
-        link: "/servicespage/digital-marketing",
-      },
-    ]
+    // children: [
+    //   {
+    //     label: "Digital Branding & Communication",
+    //     link: "/servicespage/digitalbranding",
+    //   },
+    //   {
+    //     label: "UI & UX Design",
+    //     link: "/servicespage/ui-ux",
+    //   },
+    //   {
+    //     label: "Web Development",
+    //     link: "/servicespage/web-development",
+    //   },
+    //   {
+    //     label: "E-Commerce",
+    //     link: "/servicespage/e-commerce",
+    //   },
+    //   {
+    //     label: "Digital Marketing",
+    //     link: "/servicespage/digital-marketing",
+    //   },
+    // ]
   },
-  {
-    label: "CASE STUDY",
-    link: "/casestudy",
-  },
+  // {
+  //   label: "CASE STUDY",
+  //   link: "/casestudy",
+  // },
   {
     label: "CREATIVE",
     // link: "",

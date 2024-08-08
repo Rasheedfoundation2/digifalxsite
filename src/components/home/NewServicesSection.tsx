@@ -60,11 +60,11 @@ const Services: React.FC = () => {
 
   const handleMouseEnter = (serviceName: string) => {
     const backgroundImageMap: { [key: string]: string } = {
-      'Digital Branding & Communication Services': '/assets/images/img1.jpg',
-      'UI / UX Services': '/assets/images/img2.jpg',
-      'Web Development': '/assets/images/img3.jpg',
-      'E-Commerce': '/assets/images/img4.jpg',
-      'Digital Marketing': '/assets/images/img5.jpg',
+      'Digital Branding & Communication Services': '/assets/images/branding.webp',
+      'UI / UX Services': '/assets/images/ui-ux.webp',
+      'Web Development': '/assets/images/web-development.webp',
+      'E-Commerce': '/assets/images/ecommerce.webp',
+      'Digital Marketing': '/assets/images/digital-marketing.webp',
     };
 
     const newBackground = backgroundImageMap[serviceName];

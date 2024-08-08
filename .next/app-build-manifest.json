@@ -12,15 +12,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/ourworks/page": [
+    "/contactus/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/ourworks/page.js"
-    ],
-    "/servicespage/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/servicespage/page.js"
+      "static/chunks/app/contactus/page.js"
     ]
   }
 }
