@@ -1,6 +1,6 @@
-"use client";
+"use client";  // Add this to mark the component as a client component
+
 import { useState } from 'react';
-import axios from 'axios';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ const ContactPage = () => {
     email: '',
     phoneNumber: '',
     subject: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -18,10 +18,28 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     try {
-      const response = await axios.post('/api/contact', formData);
-      if (response.status === 200) {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
         alert('Message sent successfully!');
+        // Clear the form
+        setFormData({
+          fullName: '',
+          email: '',
+          phoneNumber: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        throw new Error('Message not sent!');
       }
     } catch (error) {
       console.error('Error sending message:', error);
@@ -56,7 +74,7 @@ const ContactPage = () => {
               <div className="mb-4">
                 <label className="block text-graysubheading mb-1" htmlFor="email">Email Address</label>
                 <input
-                  className="w-full px-3 py-2 mt-1 text-graysubheading roundedtext-graysubheading bg-BlackNew2"
+                  className="w-full px-3 py-2 mt-1 text-graysubheading rounded bg-BlackNew2"
                   type="email"
                   name="email"
                   id="email"
@@ -80,7 +98,7 @@ const ContactPage = () => {
               <div className="mb-6">
                 <label className="block text-graysubheading mb-1" htmlFor="message">Message</label>
                 <textarea
-                  className="w-full px-3 py-2 mt-1  text-graysubheading bg-BlackNew2 rounded"
+                  className="w-full px-3 py-2 mt-1 text-graysubheading bg-BlackNew2 rounded"
                   name="message"
                   id="message"
                   rows={4}
@@ -91,13 +109,13 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
-                className=" w-36 py-2 text-center text-white border-2 border-BlueNew">
+                className="w-36 py-2 text-center text-white border-2 border-BlueNew">
                 Send Message
               </button>
             </form>
           </div>
 
-          <div className="lg:order-1 order-2 space-y-4 justify-center grayscale hover:grayscale-0 ">
+          <div className="lg:order-1 order-2 space-y-4 justify-center grayscale hover:grayscale-0">
             <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.1511551192074!2d55.27078231500472!3d25.20484938388839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434df0000001%3A0x2f3b78d639d8d21f!2sDubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1626104473328!5m2!1sen!2sin"

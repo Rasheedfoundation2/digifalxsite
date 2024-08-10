@@ -1,11 +1,11 @@
 "use client";
 // components/TeamCarousel.tsx
 
-import React from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { teamMembers } from '@/components/aboutpage/TeamMembers';
-import { FaLinkedin } from 'react-icons/fa';
+import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { teamMembers } from "@/components/aboutpage/TeamMembers";
+import { FaLinkedin } from "react-icons/fa";
 
 const responsive = {
   superLargeDesktop: {
@@ -39,30 +39,33 @@ const TeamCarousel: React.FC = () => {
       customTransition="transform 300ms ease-in-out"
     >
       {teamMembers.map((member) => (
-        <React.Fragment key={member.id}>
-          <div className="flex justify-center">
-            <div className="bg-graycard rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-xl duration-300 w-full max-w-xs flex flex-col items-center m-0">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-64 object-cover rounded-t-lg mb-0"
-              />
-              <div className="p-4 text-center flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 className="text-xl text-whiteheading font-bold mb-1">{member.name}</h3>
-                  <p className="text-graysubheading mb-4">{member.title}</p>
-                </div>
-                <div className="mt-2 flex space-x-2 justify-center">
-                  {member.linkedin && (
-                    <a href={member.linkedin} className="text-blue-700 hover:text-blue-500">
-                      <FaLinkedin />
-                    </a>
-                  )}
-                </div>
+        <div key={member.id} className="flex justify-center">
+          <div className="bg-graycard rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-xl duration-300 w-full max-w-xs flex flex-col items-center mx-auto">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-full h-64 object-cover rounded-t-lg"
+            />
+            <div className="p-4 text-center flex flex-col justify-between h-full w-full">
+              <div>
+                <h3 className="text-xl text-whiteheading font-bold mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-graysubheading mb-4">{member.title}</p>
+              </div>
+              <div className="mt-2 flex justify-center">
+                {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    className="text-blue-700 hover:text-blue-500"
+                  >
+                    <FaLinkedin size={24} />
+                  </a>
+                )}
               </div>
             </div>
           </div>
-        </React.Fragment>
+        </div>
       ))}
     </Carousel>
   );

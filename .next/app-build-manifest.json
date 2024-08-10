@@ -16,6 +16,22 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/contactus/page.js"
+    ],
+    "/servicespage/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/servicespage/page.js"
+    ],
+    "/ourworks/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ourworks/page.js"
+    ],
+    "/aboutus/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/aboutus/page.css",
+      "static/chunks/app/aboutus/page.js"
     ]
   }
 }

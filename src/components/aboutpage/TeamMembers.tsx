@@ -24,14 +24,14 @@ export const teamMembers = [
       image: "/assets/images/Team/Bilkees_Shaikh.webp",
       linkedin: "https://www.linkedin.com/in/balkees-shaikh-431795234/",
     },
-    {
-      id: 3,
-      name: "Ankush Kanojia",
-      title: "CLIENT OPERATIONS HEAD",
-      image: "/assets/images/Team/Ankush_Kanojia.webp",
-      linkedin: "https://www.linkedin.com/in/ankush-kanojia-6a2366169/",
+    // {
+    //   id: 3,
+    //   name: "Ankush Kanojia",
+    //   title: "CLIENT OPERATIONS HEAD",
+    //   image: "/assets/images/Team/Ankush_Kanojia.webp",
+    //   linkedin: "https://www.linkedin.com/in/ankush-kanojia-6a2366169/",
   
-    },
+    // },
     // {
     //   id: 4,
     //   name: "Yash Khatri",
@@ -48,14 +48,14 @@ export const teamMembers = [
     //   linkedin: "#",
   
     // },
-    {
-      id: 6,
-      name: "Shivan Sahani",
-      title: "CREATIVE HEAD",
-      image: "/assets/images/Team/Shivan_sahani.webp",
-      linkedin: "https://www.linkedin.com/in/shivan-sahni-a12510198/",
+    // {
+    //   id: 6,
+    //   name: "Shivan Sahani",
+    //   title: "CREATIVE HEAD",
+    //   image: "/assets/images/Team/Shivan_sahani.webp",
+    //   linkedin: "https://www.linkedin.com/in/shivan-sahni-a12510198/",
       
-    },
+    // },
     // {
     //   id: 7,
     //   name: "Nikhilesh",
