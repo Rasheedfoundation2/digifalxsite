@@ -91,8 +91,8 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "BLOG",
-    link: "https://digifalx.com/blog/",
+    label: "BLOGS",
+    link: "https://blog.digifalx.com",
   },
 ];
 

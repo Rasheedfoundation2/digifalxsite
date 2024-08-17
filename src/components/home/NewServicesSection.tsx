@@ -66,7 +66,7 @@ const Services: React.FC = () => {
       'E-Commerce': '/assets/images/ecommerce.webp',
       'Digital Marketing': '/assets/images/digital-marketing.webp',
     };
-
+  
     const newBackground = backgroundImageMap[serviceName];
     if (newBackground) {
       setBackground(newBackground);
